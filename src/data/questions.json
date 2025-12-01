@@ -926,7 +926,7 @@
     "type": "short_answer",
     "section": "四、简答题",
     "title": "简述Linux文件权限系统中rwx分别代表什么含义，以及数字表示法如何工作。",
-    "referenceAnswer": ""
+    "referenceAnswer": "rwx含义：r(读权限-4)、w(写权限-2)、x(执行权限-1)\n数字表示法：三位数字分别代表所有者、同组用户、其他用户的权限总和\n例如：755 = 所有者(7=4+2+1=rwx)，同组用户(5=4+1=rx)，其他用户(5=4+1=rx)"
   },
   {
     "id": "short_2",

@@ -97,6 +97,8 @@
 }
 
 .option {
+  width: 100%;
+  text-align: left;
   padding: var(--spacing-sm) var(--spacing-md);
   background: var(--color-bg-secondary);
   border: 1px solid var(--color-border);
@@ -104,11 +106,93 @@
   color: var(--color-text-primary);
   font-size: 0.9375rem;
   transition: all var(--transition-fast);
+  cursor: pointer;
+  position: relative;
 }
 
-.option:hover {
+.option:hover:not(:disabled) {
   background: var(--color-bg-tertiary);
   border-color: var(--color-border-hover);
+}
+
+.option.selected {
+  border-color: var(--color-primary);
+  background: #eff6ff;
+  color: var(--color-primary);
+  font-weight: 500;
+}
+
+.option.correct {
+  border-color: var(--color-success);
+  background: #f0fdf4;
+  color: var(--color-success);
+}
+
+.option.incorrect {
+  border-color: var(--color-error);
+  background: #fef2f2;
+  color: var(--color-error);
+}
+
+.option:disabled {
+  cursor: default;
+  opacity: 0.8;
+}
+
+/* 判断题按钮组 */
+.booleanGroup {
+  display: flex;
+  gap: var(--spacing-lg);
+  margin-top: var(--spacing-lg);
+}
+
+.booleanButton {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: var(--spacing-sm);
+  padding: var(--spacing-lg);
+  border: 2px solid var(--color-border);
+  border-radius: var(--radius-lg);
+  background: var(--color-bg-primary);
+  font-size: 1.125rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all var(--transition-fast);
+}
+
+.booleanButton:hover:not(:disabled) {
+  transform: translateY(-2px);
+  box-shadow: var(--shadow-md);
+}
+
+.booleanButton.true:hover:not(:disabled) {
+  border-color: var(--color-success);
+  color: var(--color-success);
+}
+
+.booleanButton.false:hover:not(:disabled) {
+  border-color: var(--color-error);
+  color: var(--color-error);
+}
+
+.booleanButton.selected {
+  border-color: var(--color-primary);
+  background: #eff6ff;
+  color: var(--color-primary);
+}
+
+.booleanButton.correct {
+  border-color: var(--color-success);
+  background: #f0fdf4;
+  color: var(--color-success);
+}
+
+.booleanButton.incorrect {
+  border-color: var(--color-error);
+  background: #fef2f2;
+  color: var(--color-error);
 }
 
 /* 代码块 */

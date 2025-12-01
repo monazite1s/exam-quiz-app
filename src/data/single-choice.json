@@ -4,7 +4,12 @@
     "type": "single_choice",
     "section": "一、选择题",
     "title": "Linux中哪个命令用于查看系统进程信息？",
-    "options": ["A. Ps", "B. ls", "C. top", "D. A和C"],
+    "options": [
+      "A. Ps",
+      "B. ls",
+      "C. top",
+      "D. A和C"
+    ],
     "correctAnswer": "D"
   },
   {
@@ -12,7 +17,12 @@
     "type": "single_choice",
     "section": "一、选择题",
     "title": "Python中哪个关键字用于定义函数？",
-    "options": ["A. function", "B. def", "C. define", "D. func"],
+    "options": [
+      "A. function",
+      "B. def",
+      "C. define",
+      "D. func"
+    ],
     "correctAnswer": "B"
   },
   {
@@ -20,7 +30,12 @@
     "type": "single_choice",
     "section": "一、选择题",
     "title": "随机森林算法属于哪种集成学习方法？",
-    "options": ["A. Bagging", "B. Boosting", "C. Stacking", "D. Blending"],
+    "options": [
+      "A. Bagging",
+      "B. Boosting",
+      "C. Stacking",
+      "D. Blending"
+    ],
     "correctAnswer": "A"
   },
   {
@@ -54,7 +69,12 @@
     "type": "single_choice",
     "section": "一、选择题",
     "title": "Linux中哪个命令用于显示当前工作目录的完整路径？",
-    "options": ["A. Ls", "B. pwd", "C. cd", "D. whereis"],
+    "options": [
+      "A. Ls",
+      "B. pwd",
+      "C. cd",
+      "D. whereis"
+    ],
     "correctAnswer": "B"
   },
   {
@@ -75,7 +95,12 @@
     "type": "single_choice",
     "section": "一、选择题",
     "title": "在机器学习中，K-近邻算法属于哪种学习类型？",
-    "options": ["A. 监督学习", "B. 无监督学习", "C. 半监督学习", "D. 强化学习"],
+    "options": [
+      "A. 监督学习",
+      "B. 无监督学习",
+      "C. 半监督学习",
+      "D. 强化学习"
+    ],
     "correctAnswer": "A"
   },
   {
@@ -83,7 +108,12 @@
     "type": "single_choice",
     "section": "一、选择题",
     "title": "深度学习中的Dropout技术主要用于：",
-    "options": ["A. 数据增强", "B. 防止过拟合", "C. 加速训练", "D. 特征提取"],
+    "options": [
+      "A. 数据增强",
+      "B. 防止过拟合",
+      "C. 加速训练",
+      "D. 特征提取"
+    ],
     "correctAnswer": "B"
   },
   {
@@ -91,7 +121,12 @@
     "type": "single_choice",
     "section": "一、选择题",
     "title": "Transformer模型的核心机制是：",
-    "options": ["A. 卷积操作", "B. 循环连接", "C. 注意力机制", "D. 池化层"],
+    "options": [
+      "A. 卷积操作",
+      "B. 循环连接",
+      "C. 注意力机制",
+      "D. 池化层"
+    ],
     "correctAnswer": "C"
   },
   {
@@ -99,7 +134,12 @@
     "type": "single_choice",
     "section": "一、选择题",
     "title": "Linux中哪个命令可以实时监控文件内容的变化？",
-    "options": ["A. cat", "B. tail -f", "C. head", "D. more"],
+    "options": [
+      "A. cat",
+      "B. tail -f",
+      "C. head",
+      "D. more"
+    ],
     "correctAnswer": "B"
   },
   {
@@ -107,7 +147,12 @@
     "type": "single_choice",
     "section": "一、选择题",
     "title": "Python中用于创建生成器的关键字是？",
-    "options": ["A. function", "B. generator", "C. yield", "D. return"],
+    "options": [
+      "A. function",
+      "B. generator",
+      "C. yield",
+      "D. return"
+    ],
     "correctAnswer": "C"
   },
   {
@@ -115,7 +160,12 @@
     "type": "single_choice",
     "section": "一、选择题",
     "title": "支持向量机(SVM)中，用于处理非线性可分问题的技术是？",
-    "options": ["A. 正则化", "B. 核技巧", "C. 特征选择", "D. 数据标准化"],
+    "options": [
+      "A. 正则化",
+      "B. 核技巧",
+      "C. 特征选择",
+      "D. 数据标准化"
+    ],
     "correctAnswer": "B"
   },
   {
@@ -175,7 +225,12 @@
     "type": "single_choice",
     "section": "一、选择题",
     "title": "AI Agent的基本框架不包括以下哪个部分？",
-    "options": ["A. 感知", "B. 规划", "C. 自我复制", "D. 执行"],
+    "options": [
+      "A. 感知",
+      "B. 规划",
+      "C. 自我复制",
+      "D. 执行"
+    ],
     "correctAnswer": "C"
   },
   {
@@ -196,7 +251,12 @@
     "type": "single_choice",
     "section": "一、选择题",
     "title": "Linux中用于查看网络连接状态的命令是？",
-    "options": ["A. netstat", "B. ping", "C. ifconfig", "D. curl"],
+    "options": [
+      "A. netstat",
+      "B. ping",
+      "C. ifconfig",
+      "D. curl"
+    ],
     "correctAnswer": "A"
   },
   {
@@ -204,7 +264,12 @@
     "type": "single_choice",
     "section": "一、选择题",
     "title": "在提示词工程中，\"Temperature\"参数主要控制：",
-    "options": ["A. 生成速度", "B. 输出的随机性", "C. 内存使用", "D. 模型大小"],
+    "options": [
+      "A. 生成速度",
+      "B. 输出的随机性",
+      "C. 内存使用",
+      "D. 模型大小"
+    ],
     "correctAnswer": "B"
   },
   {
@@ -251,7 +316,12 @@
     "type": "single_choice",
     "section": "一、选择题",
     "title": "Linux中用于查看文件开头内容的命令是：",
-    "options": ["A. head", "B. tail", "C. cat", "D. less"],
+    "options": [
+      "A. head",
+      "B. tail",
+      "C. cat",
+      "D. less"
+    ],
     "correctAnswer": "A"
   },
   {
@@ -298,7 +368,12 @@
     "type": "single_choice",
     "section": "一、选择题",
     "title": "AI Agent的核心能力不包括：",
-    "options": ["A. 感知环境", "B. 决策行动", "C. 自我复制", "D. 学习改进"],
+    "options": [
+      "A. 感知环境",
+      "B. 决策行动",
+      "C. 自我复制",
+      "D. 学习改进"
+    ],
     "correctAnswer": "C"
   },
   {
@@ -319,7 +394,12 @@
     "type": "single_choice",
     "section": "一、选择题",
     "title": "Linux中用于查找文件的命令是：",
-    "options": ["A. find", "B. search", "C. locate", "D. grep"],
+    "options": [
+      "A. find",
+      "B. search",
+      "C. locate",
+      "D. grep"
+    ],
     "correctAnswer": "A"
   },
   {
@@ -340,7 +420,12 @@
     "type": "single_choice",
     "section": "一、选择题",
     "title": "K-means聚类算法属于哪种学习类型？",
-    "options": ["A. 监督学习", "B. 无监督学习", "C. 半监督学习", "D. 强化学习"],
+    "options": [
+      "A. 监督学习",
+      "B. 无监督学习",
+      "C. 半监督学习",
+      "D. 强化学习"
+    ],
     "correctAnswer": "B"
   },
   {

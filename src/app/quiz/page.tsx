@@ -14,6 +14,7 @@ import QuestionCard from "@/components/QuestionCard/QuestionCard";
 import AnswerInput from "@/components/AnswerInput/AnswerInput";
 import FeedbackDisplay from "@/components/FeedbackDisplay/FeedbackDisplay";
 import ProgressBar from "@/components/ProgressBar/ProgressBar";
+import QuestionNavigator from "@/components/QuestionNavigator/QuestionNavigator";
 import styles from "./page.module.css";
 
 /**
@@ -28,10 +29,13 @@ export default function QuizPage() {
   const [questions, setQuestions] = useState<Question[]>([]);
   const [currentIndex, setCurrentIndex] = useState(0);
   const [userAnswer, setUserAnswer] = useState<string | boolean>("");
-  const [attempts, setAttempts] = useState<QuizAttempt[]>([]);
+  // 使用 Map 来存储答题记录，key 为 questionId，确保每个题目只有一条记录
+  const [attemptsMap, setAttemptsMap] = useState<Map<string, QuizAttempt>>(
+    new Map()
+  );
   const [showFeedback, setShowFeedback] = useState(false);
   const [isLoading, setIsLoading] = useState(true);
-  const [quizMode, setQuizMode] = useState<"exam" | "practice">("practice"); // 默认练习模式
+  const [quizMode, setQuizMode] = useState<"exam" | "practice">("practice");
 
   // 加载题目
   useEffect(() => {
@@ -52,6 +56,7 @@ export default function QuizPage() {
   const currentQuestion = questions[currentIndex];
 
   // 计算统计数据
+  const attempts = Array.from(attemptsMap.values());
   const stats: QuizStats = {
     total: questions.length,
     answered: attempts.length,
@@ -64,8 +69,18 @@ export default function QuizPage() {
         : 0,
   };
 
+  // 生成导航数据
+  const navigatorAttempts = attempts.reduce((acc, attempt) => {
+    // 找到题目在数组中的索引
+    const index = questions.findIndex((q) => q.id === attempt.questionId);
+    if (index !== -1) {
+      acc[index] = attempt.isCorrect;
+    }
+    return acc;
+  }, {} as Record<number, boolean>);
+
   // 提交答案
-  const handleSubmit = () => {
+  const handleSubmit = (answer: string | boolean = userAnswer) => {
     if (!currentQuestion) return;
 
     // 对于主观题，直接跳过
@@ -78,7 +93,7 @@ export default function QuizPage() {
     }
 
     // 检查是否已作答
-    if (userAnswer === "" || userAnswer === null || userAnswer === undefined) {
+    if (answer === "" || answer === null || answer === undefined) {
       alert("请先选择或填写答案！");
       return;
     }
@@ -94,25 +109,26 @@ export default function QuizPage() {
     }
 
     // 检查答案
-    const isCorrect = checkAnswer(
-      userAnswer,
-      correctAnswer,
-      currentQuestion.type
-    );
+    const isCorrect = checkAnswer(answer, correctAnswer, currentQuestion.type);
 
-    // 记录答题
+    // 记录答题 (更新 Map)
     const attempt: QuizAttempt = {
       questionId: currentQuestion.id,
-      userAnswer,
+      userAnswer: answer,
       isCorrect,
       timestamp: Date.now(),
     };
 
-    setAttempts([...attempts, attempt]);
+    setAttemptsMap((prev) => {
+      const newMap = new Map(prev);
+      newMap.set(currentQuestion.id, attempt);
+      return newMap;
+    });
+
     setShowFeedback(true);
 
-    // 练习模式：延迟后自动进入下一题
-    if (quizMode === "practice") {
+    // 练习模式逻辑：只有答对才自动跳转
+    if (quizMode === "practice" && isCorrect) {
       setTimeout(() => {
         handleNext();
       }, 1500); // 1.5秒后自动下一题
@@ -143,47 +159,18 @@ export default function QuizPage() {
     }
   };
 
-  // 处理答案变化（练习模式自动提交）
-  const handleAnswerChange = (value: string | boolean) => {
-    setUserAnswer(value);
+  // 跳转到指定题目
+  const handleJumpTo = (index: number) => {
+    setCurrentIndex(index);
+    setUserAnswer("");
+    setShowFeedback(false);
+  };
 
-    // 练习模式：单选题和判断题自动提交
-    if (quizMode === "practice" && !showFeedback) {
-      if (
-        currentQuestion.type === QuestionType.SINGLE_CHOICE ||
-        currentQuestion.type === QuestionType.TRUE_FALSE
-      ) {
-        // 延迟一点点，让用户看到选择效果
-        setTimeout(() => {
-          const tempAnswer = value;
-          let correctAnswer: string | boolean = "";
-          if (currentQuestion.type === QuestionType.SINGLE_CHOICE) {
-            correctAnswer = currentQuestion.correctAnswer;
-          } else if (currentQuestion.type === QuestionType.TRUE_FALSE) {
-            correctAnswer = currentQuestion.correctAnswer;
-          }
-
-          const isCorrect = checkAnswer(
-            tempAnswer,
-            correctAnswer,
-            currentQuestion.type
-          );
-          const attempt: QuizAttempt = {
-            questionId: currentQuestion.id,
-            userAnswer: tempAnswer,
-            isCorrect,
-            timestamp: Date.now(),
-          };
-
-          setAttempts([...attempts, attempt]);
-          setShowFeedback(true);
-
-          // 自动进入下一题
-          setTimeout(() => {
-            handleNext();
-          }, 1500);
-        }, 200);
-      }
+  // 处理直接答题（单选/判断）
+  const handleDirectAnswer = (answer: string | boolean) => {
+    setUserAnswer(answer);
+    if (quizMode === "practice") {
+      handleSubmit(answer);
     }
   };
 
@@ -248,24 +235,35 @@ export default function QuizPage() {
         {quizMode === "exam" ? (
           <span>📝 考试模式：手动提交答案，适合模拟考试</span>
         ) : (
-          <span>⚡ 练习模式：选择后自动提交，快速刷题</span>
+          <span>⚡ 练习模式：答对自动下一题，答错需手动跳转</span>
         )}
       </div>
 
       {/* 进度条 */}
       <ProgressBar stats={stats} currentIndex={currentIndex} />
 
+      {/* 题目导航 */}
+      <QuestionNavigator
+        totalQuestions={questions.length}
+        currentIndex={currentIndex}
+        onSelectQuestion={handleJumpTo}
+        attempts={navigatorAttempts}
+      />
+
       {/* 题目卡片 */}
       <QuestionCard
         question={currentQuestion}
         questionNumber={currentIndex + 1}
+        userAnswer={userAnswer}
+        showFeedback={showFeedback}
+        onAnswer={handleDirectAnswer}
       />
 
-      {/* 答案输入 */}
+      {/* 答案输入 (仅填空题) */}
       <AnswerInput
         questionType={currentQuestion.type}
         value={userAnswer}
-        onChange={handleAnswerChange}
+        onChange={setUserAnswer}
         disabled={showFeedback}
       />
 
@@ -274,7 +272,7 @@ export default function QuizPage() {
         currentQuestion.type !== QuestionType.SHORT_ANSWER &&
         currentQuestion.type !== QuestionType.CODE && (
           <FeedbackDisplay
-            isCorrect={attempts[attempts.length - 1]?.isCorrect || false}
+            isCorrect={attemptsMap.get(currentQuestion.id)?.isCorrect || false}
             correctAnswer={
               currentQuestion.type === QuestionType.SINGLE_CHOICE
                 ? currentQuestion.correctAnswer
@@ -299,7 +297,10 @@ export default function QuizPage() {
         </button>
 
         {quizMode === "exam" && !showFeedback ? (
-          <button onClick={handleSubmit} className={styles.primaryButton}>
+          <button
+            onClick={showFeedback ? handleNext : () => handleSubmit()}
+            className={styles.primaryButton}
+          >
             {currentQuestion.type === QuestionType.SHORT_ANSWER ||
             currentQuestion.type === QuestionType.CODE
               ? "下一题"
@@ -310,6 +311,11 @@ export default function QuizPage() {
             {currentIndex < questions.length - 1 ? "下一题 →" : "完成"}
           </button>
         ) : null}
+        {quizMode === "practice" && (
+          <button onClick={handleNext} className={styles.primaryButton}>
+            下一题 →
+          </button>
+        )}
       </div>
 
       {/* 返回首页 */}

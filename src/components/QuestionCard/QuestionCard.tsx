@@ -9,15 +9,22 @@ import styles from "./QuestionCard.module.css";
 interface QuestionCardProps {
   question: Question;
   questionNumber: number;
+  userAnswer?: string | boolean;
+  showFeedback?: boolean;
+  onAnswer?: (answer: string | boolean) => void;
 }
 
 /**
  * 题目卡片组件
  * 根据题目类型展示不同的内容
+ * 支持直接点击选项答题
  */
 export default function QuestionCard({
   question,
   questionNumber,
+  userAnswer,
+  showFeedback,
+  onAnswer,
 }: QuestionCardProps) {
   // 渲染题目类型标签
   const renderTypeLabel = () => {
@@ -42,11 +49,76 @@ export default function QuestionCard({
 
     return (
       <div className={styles.options}>
-        {question.options.map((option, index) => (
-          <div key={index} className={styles.option}>
-            {option}
-          </div>
-        ))}
+        {question.options.map((option, index) => {
+          // 提取选项字母 (A, B, C, D)
+          const letter = option.charAt(0);
+          const isSelected = userAnswer === letter;
+
+          let statusClass = "";
+          if (showFeedback) {
+            if (letter === question.correctAnswer) {
+              statusClass = styles.correct;
+            } else if (isSelected && letter !== question.correctAnswer) {
+              statusClass = styles.incorrect;
+            }
+          } else if (isSelected) {
+            statusClass = styles.selected;
+          }
+
+          return (
+            <button
+              key={index}
+              className={`${styles.option} ${statusClass}`}
+              onClick={() => onAnswer && !showFeedback && onAnswer(letter)}
+              disabled={showFeedback}
+            >
+              {option}
+            </button>
+          );
+        })}
+      </div>
+    );
+  };
+
+  // 渲染判断题按钮
+  const renderTrueFalse = () => {
+    if (question.type !== QuestionType.TRUE_FALSE) return null;
+
+    const renderButton = (
+      value: boolean,
+      label: string,
+      icon: string,
+      typeClass: string
+    ) => {
+      const isSelected = userAnswer === value;
+      let statusClass = "";
+
+      if (showFeedback) {
+        if (value === question.correctAnswer) {
+          statusClass = styles.correct;
+        } else if (isSelected && value !== question.correctAnswer) {
+          statusClass = styles.incorrect;
+        }
+      } else if (isSelected) {
+        statusClass = styles.selected;
+      }
+
+      return (
+        <button
+          className={`${styles.booleanButton} ${styles[typeClass]} ${statusClass}`}
+          onClick={() => onAnswer && !showFeedback && onAnswer(value)}
+          disabled={showFeedback}
+        >
+          <span className={styles.icon}>{icon}</span>
+          <span>{label}</span>
+        </button>
+      );
+    };
+
+    return (
+      <div className={styles.booleanGroup}>
+        {renderButton(true, "正确", "✓", "true")}
+        {renderButton(false, "错误", "✗", "false")}
       </div>
     );
   };
@@ -95,6 +167,7 @@ export default function QuestionCard({
 
         {/* 根据题型渲染不同内容 */}
         {renderOptions()}
+        {renderTrueFalse()}
         {renderCode()}
 
         {/* 简答题参考答案（默认隐藏） */}
