@@ -5,7 +5,10 @@
     "section": "一、选择题",
     "title": "Linux中哪个命令用于查看系统进程信息？",
     "options": [
-      "A. Ps    B. ls    C. top    D. A和C"
+      "A. Ps",
+      "B. ls",
+      "C. top",
+      "D. A和C"
     ],
     "correctAnswer": "D"
   },
@@ -67,7 +70,10 @@
     "section": "一、选择题",
     "title": "Linux中哪个命令用于显示当前工作目录的完整路径？",
     "options": [
-      "A. Ls    B. pwd    C. cd    D. whereis"
+      "A. Ls",
+      "B. pwd",
+      "C. cd",
+      "D. whereis"
     ],
     "correctAnswer": "B"
   },

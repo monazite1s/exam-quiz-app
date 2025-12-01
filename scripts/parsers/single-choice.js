@@ -43,8 +43,17 @@ function parseSingleChoice(examDir) {
                     i++;
                     break; // 空行表示选项结束
                 }
+
+                // 检查是否是选项行（A. B. C. D.开头）
                 if (optLine.match(/^[A-D]\./)) {
-                    options.push(optLine);
+                    // 检查是否包含多个选项（例如一行内有 A. xxx B. xxx）
+                    // 使用正则分割：空白字符后跟 [A-D].
+                    const parts = optLine.split(/\s+(?=[A-D]\.)/);
+                    if (parts.length > 1) {
+                        options.push(...parts);
+                    } else {
+                        options.push(optLine);
+                    }
                     i++;
                 } else if (optLine.match(/^\d+\./)) {
                     // 遇到下一题
