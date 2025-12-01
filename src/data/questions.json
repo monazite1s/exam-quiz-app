@@ -1,0 +1,1067 @@
+[
+  {
+    "id": "single_1",
+    "type": "single_choice",
+    "section": "一、选择题",
+    "title": "Linux中哪个命令用于查看系统进程信息？",
+    "options": [
+      "A. Ps    B. ls    C. top    D. A和C"
+    ],
+    "correctAnswer": "D"
+  },
+  {
+    "id": "single_2",
+    "type": "single_choice",
+    "section": "一、选择题",
+    "title": "Python中哪个关键字用于定义函数？",
+    "options": [
+      "A. function",
+      "B. def",
+      "C. define",
+      "D. func"
+    ],
+    "correctAnswer": "B"
+  },
+  {
+    "id": "single_3",
+    "type": "single_choice",
+    "section": "一、选择题",
+    "title": "随机森林算法属于哪种集成学习方法？",
+    "options": [
+      "A. Bagging",
+      "B. Boosting",
+      "C. Stacking",
+      "D. Blending"
+    ],
+    "correctAnswer": "A"
+  },
+  {
+    "id": "single_4",
+    "type": "single_choice",
+    "section": "一、选择题",
+    "title": "深度学习中的批量归一化(BatchNorm)主要作用是：",
+    "options": [
+      "A. 增加模型容量",
+      "B. 加速训练并提高稳定性",
+      "C. 减少参数数量",
+      "D. 防止梯度爆炸"
+    ],
+    "correctAnswer": "B"
+  },
+  {
+    "id": "single_5",
+    "type": "single_choice",
+    "section": "一、选择题",
+    "title": "Transformer模型中的位置编码(Positional Encoding)用于：",
+    "options": [
+      "A. 增加模型参数",
+      "B. 提供序列位置信息",
+      "C. 提高计算效率",
+      "D. 减少过拟合"
+    ],
+    "correctAnswer": "B"
+  },
+  {
+    "id": "single_6",
+    "type": "single_choice",
+    "section": "一、选择题",
+    "title": "Linux中哪个命令用于显示当前工作目录的完整路径？",
+    "options": [
+      "A. Ls    B. pwd    C. cd    D. whereis"
+    ],
+    "correctAnswer": "B"
+  },
+  {
+    "id": "single_7",
+    "type": "single_choice",
+    "section": "一、选择题",
+    "title": "Python中用于创建虚拟环境的命令是？",
+    "options": [
+      "A. python create env",
+      "B. pip install venv",
+      "C. python -m venv",
+      "D. conda make env"
+    ],
+    "correctAnswer": "C"
+  },
+  {
+    "id": "single_8",
+    "type": "single_choice",
+    "section": "一、选择题",
+    "title": "在机器学习中，K-近邻算法属于哪种学习类型？",
+    "options": [
+      "A. 监督学习",
+      "B. 无监督学习",
+      "C. 半监督学习",
+      "D. 强化学习"
+    ],
+    "correctAnswer": "A"
+  },
+  {
+    "id": "single_9",
+    "type": "single_choice",
+    "section": "一、选择题",
+    "title": "深度学习中的Dropout技术主要用于：",
+    "options": [
+      "A. 数据增强",
+      "B. 防止过拟合",
+      "C. 加速训练",
+      "D. 特征提取"
+    ],
+    "correctAnswer": "B"
+  },
+  {
+    "id": "single_10",
+    "type": "single_choice",
+    "section": "一、选择题",
+    "title": "Transformer模型的核心机制是：",
+    "options": [
+      "A. 卷积操作",
+      "B. 循环连接",
+      "C. 注意力机制",
+      "D. 池化层"
+    ],
+    "correctAnswer": "C"
+  },
+  {
+    "id": "single_11",
+    "type": "single_choice",
+    "section": "一、选择题",
+    "title": "Linux中哪个命令可以实时监控文件内容的变化？",
+    "options": [
+      "A. cat",
+      "B. tail -f",
+      "C. head",
+      "D. more"
+    ],
+    "correctAnswer": "B"
+  },
+  {
+    "id": "single_12",
+    "type": "single_choice",
+    "section": "一、选择题",
+    "title": "Python中用于创建生成器的关键字是？",
+    "options": [
+      "A. function",
+      "B. generator",
+      "C. yield",
+      "D. return"
+    ],
+    "correctAnswer": "C"
+  },
+  {
+    "id": "single_13",
+    "type": "single_choice",
+    "section": "一、选择题",
+    "title": "支持向量机(SVM)中，用于处理非线性可分问题的技术是？",
+    "options": [
+      "A. 正则化",
+      "B. 核技巧",
+      "C. 特征选择",
+      "D. 数据标准化"
+    ],
+    "correctAnswer": "B"
+  },
+  {
+    "id": "single_14",
+    "type": "single_choice",
+    "section": "一、选择题",
+    "title": "深度学习中的梯度消失问题在哪种网络中最严重？",
+    "options": [
+      "A. 卷积神经网络",
+      "B. 循环神经网络",
+      "C. 自编码器",
+      "D. 生成对抗网络"
+    ],
+    "correctAnswer": "B"
+  },
+  {
+    "id": "single_15",
+    "type": "single_choice",
+    "section": "一、选择题",
+    "title": "Transformer模型中的位置编码主要用于解决什么问题？",
+    "options": [
+      "A. 提高计算效率",
+      "B. 提供序列位置信息",
+      "C. 减少模型参数",
+      "D. 防止过拟合"
+    ],
+    "correctAnswer": "B"
+  },
+  {
+    "id": "single_16",
+    "type": "single_choice",
+    "section": "一、选择题",
+    "title": "在提示词工程中，\"思维链(Chain-of-Thought)\"的主要作用是？",
+    "options": [
+      "A. 减少响应时间",
+      "B. 提高推理透明度",
+      "C. 降低计算成本",
+      "D. 增加输出长度"
+    ],
+    "correctAnswer": "B"
+  },
+  {
+    "id": "single_17",
+    "type": "single_choice",
+    "section": "一、选择题",
+    "title": "RAG系统中，检索器通常基于什么技术查找相关文档？",
+    "options": [
+      "A. 关键词匹配",
+      "B. 向量相似度",
+      "C. 正则表达式",
+      "D. 模糊搜索"
+    ],
+    "correctAnswer": "B"
+  },
+  {
+    "id": "single_18",
+    "type": "single_choice",
+    "section": "一、选择题",
+    "title": "AI Agent的基本框架不包括以下哪个部分？",
+    "options": [
+      "A. 感知",
+      "B. 规划",
+      "C. 自我复制",
+      "D. 执行"
+    ],
+    "correctAnswer": "C"
+  },
+  {
+    "id": "single_19",
+    "type": "single_choice",
+    "section": "一、选择题",
+    "title": "模型微调中的LoRA技术主要特点是？",
+    "options": [
+      "A. 修改所有参数",
+      "B. 低秩矩阵适配",
+      "C. 只训练偏置项",
+      "D. 增加网络深度"
+    ],
+    "correctAnswer": "B"
+  },
+  {
+    "id": "single_20",
+    "type": "single_choice",
+    "section": "一、选择题",
+    "title": "Linux中用于查看网络连接状态的命令是？",
+    "options": [
+      "A. netstat",
+      "B. ping",
+      "C. ifconfig",
+      "D. curl"
+    ],
+    "correctAnswer": "A"
+  },
+  {
+    "id": "single_21",
+    "type": "single_choice",
+    "section": "一、选择题",
+    "title": "在提示词工程中，\"Temperature\"参数主要控制：",
+    "options": [
+      "A. 生成速度",
+      "B. 输出的随机性",
+      "C. 内存使用",
+      "D. 模型大小"
+    ],
+    "correctAnswer": "B"
+  },
+  {
+    "id": "single_22",
+    "type": "single_choice",
+    "section": "一、选择题",
+    "title": "RAG系统中，重排序(Reranking)阶段的主要目的是：",
+    "options": [
+      "A. 减少检索时间",
+      "B. 提高检索结果的相关性",
+      "C. 压缩检索结果",
+      "D. 格式化输出"
+    ],
+    "correctAnswer": "B"
+  },
+  {
+    "id": "single_23",
+    "type": "single_choice",
+    "section": "一、选择题",
+    "title": "AI Agent中的\"反思(Reflection)\"能力指的是：",
+    "options": [
+      "A. 从历史经验中学习",
+      "B. 评估自身行动效果",
+      "C. 模仿人类行为",
+      "D. 快速响应环境变化"
+    ],
+    "correctAnswer": "B"
+  },
+  {
+    "id": "single_24",
+    "type": "single_choice",
+    "section": "一、选择题",
+    "title": "模型微调中的Adapter方法的主要特点是：",
+    "options": [
+      "A. 在Transformer层间插入小型神经网络",
+      "B. 只训练偏置项",
+      "C. 冻结所有参数",
+      "D. 重新训练整个模型"
+    ],
+    "correctAnswer": "A"
+  },
+  {
+    "id": "single_25",
+    "type": "single_choice",
+    "section": "一、选择题",
+    "title": "Linux中用于查看文件开头内容的命令是：",
+    "options": [
+      "A. head",
+      "B. tail",
+      "C. cat",
+      "D. less"
+    ],
+    "correctAnswer": "A"
+  },
+  {
+    "id": "single_26",
+    "type": "single_choice",
+    "section": "一、选择题",
+    "title": "Python中的装饰器(Decorator)主要用于：",
+    "options": [
+      "A. 修改函数或类的行为",
+      "B. 创建新的数据类型",
+      "C. 优化代码执行速度",
+      "D. 处理异常"
+    ],
+    "correctAnswer": "A"
+  },
+  {
+    "id": "single_27",
+    "type": "single_choice",
+    "section": "一、选择题",
+    "title": "在提示词工程中，\"Few-shot learning\"指的是：",
+    "options": [
+      "A. 不提供任何示例",
+      "B. 提供大量示例",
+      "C. 提供少量示例",
+      "D. 只提供负例"
+    ],
+    "correctAnswer": "C"
+  },
+  {
+    "id": "single_28",
+    "type": "single_choice",
+    "section": "一、选择题",
+    "title": "RAG（检索增强生成）模型的主要优势是：",
+    "options": [
+      "A. 训练速度更快",
+      "B. 能够访问外部知识",
+      "C. 模型参数更少",
+      "D. 不需要预处理数据"
+    ],
+    "correctAnswer": "B"
+  },
+  {
+    "id": "single_29",
+    "type": "single_choice",
+    "section": "一、选择题",
+    "title": "AI Agent的核心能力不包括：",
+    "options": [
+      "A. 感知环境",
+      "B. 决策行动",
+      "C. 自我复制",
+      "D. 学习改进"
+    ],
+    "correctAnswer": "C"
+  },
+  {
+    "id": "single_30",
+    "type": "single_choice",
+    "section": "一、选择题",
+    "title": "模型微调中，LoRA（Low-Rank Adaptation）技术的主要特点是：",
+    "options": [
+      "A. 修改所有参数",
+      "B. 只训练偏置项",
+      "C. 低秩矩阵适配",
+      "D. 增加网络层数"
+    ],
+    "correctAnswer": "C"
+  },
+  {
+    "id": "single_31",
+    "type": "single_choice",
+    "section": "一、选择题",
+    "title": "Linux中用于查找文件的命令是：",
+    "options": [
+      "A. find",
+      "B. search",
+      "C. locate",
+      "D. grep"
+    ],
+    "correctAnswer": "A"
+  },
+  {
+    "id": "single_32",
+    "type": "single_choice",
+    "section": "一、选择题",
+    "title": "Python中列表和元组的主要区别是：",
+    "options": [
+      "A. 列表可变，元组不可变",
+      "B. 列表有序，元组无序",
+      "C. 列表可哈希，元组不可哈希",
+      "D. 列表支持索引，元组不支持"
+    ],
+    "correctAnswer": "A"
+  },
+  {
+    "id": "single_33",
+    "type": "single_choice",
+    "section": "一、选择题",
+    "title": "K-means聚类算法属于哪种学习类型？",
+    "options": [
+      "A. 监督学习",
+      "B. 无监督学习",
+      "C. 半监督学习",
+      "D. 强化学习"
+    ],
+    "correctAnswer": "B"
+  },
+  {
+    "id": "single_34",
+    "type": "single_choice",
+    "section": "一、选择题",
+    "title": "BERT模型预训练的主要任务是？",
+    "options": [
+      "A. 下一句预测和掩码语言模型",
+      "B. 文本分类和情感分析",
+      "C. 机器翻译和文本生成",
+      "D. 命名实体识别和关系抽取"
+    ],
+    "correctAnswer": "A"
+  },
+  {
+    "id": "single_35",
+    "type": "single_choice",
+    "section": "一、选择题",
+    "title": "在提示词设计中，角色扮演(Role-playing)的主要作用是？",
+    "options": [
+      "A. 限制模型输出长度",
+      "B. 引导模型以特定身份回答问题",
+      "C. 提高模型推理速度",
+      "D. 减少计算资源消耗"
+    ],
+    "correctAnswer": "B"
+  },
+  {
+    "id": "single_36",
+    "type": "single_choice",
+    "section": "一、选择题",
+    "title": "知识蒸馏(Knowledge Distillation)的主要目的是？",
+    "options": [
+      "A. 训练更大的模型",
+      "B. 将大模型知识迁移到小模型",
+      "C. 增加模型多样性",
+      "D. 提高训练速度"
+    ],
+    "correctAnswer": "B"
+  },
+  {
+    "id": "single_37",
+    "type": "single_choice",
+    "section": "一、选择题",
+    "title": "Python中列表推导式相比普通for循环的主要优势是？",
+    "options": [
+      "A. 语法更简洁",
+      "B. 执行效率更高",
+      "C. 可读性更好",
+      "D. 支持更多功能"
+    ],
+    "correctAnswer": "B"
+  },
+  {
+    "id": "single_38",
+    "type": "single_choice",
+    "section": "一、选择题",
+    "title": "随机森林算法通过什么方法降低过拟合风险？",
+    "options": [
+      "A.  Bagging集成",
+      "B. Boosting集成",
+      "C. 特征选择",
+      "D. 数据增强"
+    ],
+    "correctAnswer": "A"
+  },
+  {
+    "id": "single_39",
+    "type": "single_choice",
+    "section": "一、选择题",
+    "title": "Transformer模型相比RNN模型的主要优势是？",
+    "options": [
+      "A. 更好的并行计算能力",
+      "B. 更少的参数数量",
+      "C. 更简单的模型结构",
+      "D. 更低的计算复杂度"
+    ],
+    "correctAnswer": "A"
+  },
+  {
+    "id": "single_40",
+    "type": "single_choice",
+    "section": "一、选择题",
+    "title": "卷积神经网络中的池化层(Pooling)主要作用是：",
+    "options": [
+      "A. 增加特征维度",
+      "B. 减少参数数量并保持特征不变性",
+      "C. 提高模型复杂度",
+      "D. 加速反向传播"
+    ],
+    "correctAnswer": "B"
+  },
+  {
+    "id": "single_41",
+    "type": "single_choice",
+    "section": "一、选择题",
+    "title": "GPT系列模型预训练的主要任务是：",
+    "options": [
+      "A. 自回归语言建模",
+      "B. 掩码语言建模",
+      "C. 下一句预测",
+      "D. 文本分类"
+    ],
+    "correctAnswer": "A"
+  },
+  {
+    "id": "single_42",
+    "type": "single_choice",
+    "section": "一、选择题",
+    "title": "梯度消失问题在哪种神经网络中最为严重？",
+    "options": [
+      "A. 卷积神经网络",
+      "B. 循环神经网络",
+      "C. Transformer",
+      "D. 自编码器"
+    ],
+    "correctAnswer": "B"
+  },
+  {
+    "id": "single_43",
+    "type": "single_choice",
+    "section": "一、选择题",
+    "title": "在提示词设计中，思维链（Chain-of-Thought）的主要作用是：",
+    "options": [
+      "A. 减少计算资源",
+      "B. 提高推理透明度",
+      "C. 缩短响应时间",
+      "D. 增加输出长度"
+    ],
+    "correctAnswer": "B"
+  },
+  {
+    "id": "single_44",
+    "type": "single_choice",
+    "section": "一、选择题",
+    "title": "模型量化技术的主要目的是：",
+    "options": [
+      "A. 提高模型精度",
+      "B. 减少模型大小和推理时间",
+      "C. 增加模型复杂度",
+      "D. 改善训练稳定性"
+    ],
+    "correctAnswer": "B"
+  },
+  {
+    "id": "fill_1",
+    "type": "fill_blank",
+    "section": "二、填空题",
+    "title": "Linux中用于查找命令所在路径的命令是 ______。",
+    "correctAnswer": "Which"
+  },
+  {
+    "id": "fill_2",
+    "type": "fill_blank",
+    "section": "二、填空题",
+    "title": "Python中用于创建匿名函数的关键字是 ______。",
+    "correctAnswer": "Lambda"
+  },
+  {
+    "id": "fill_3",
+    "type": "fill_blank",
+    "section": "二、填空题",
+    "title": "主成分分析(PCA)的主要目的是 ______。",
+    "correctAnswer": "降维"
+  },
+  {
+    "id": "fill_4",
+    "type": "fill_blank",
+    "section": "二、填空题",
+    "title": "生成对抗网络(GAN)由生成器和 ______ 组成。",
+    "correctAnswer": "判别器"
+  },
+  {
+    "id": "fill_5",
+    "type": "fill_blank",
+    "section": "二、填空题",
+    "title": "Transformer模型中，多头注意力机制(Multi-Head Attention)允许模型同时关注不同 ______。",
+    "correctAnswer": "表示子空间"
+  },
+  {
+    "id": "fill_6",
+    "type": "fill_blank",
+    "section": "二、填空题",
+    "title": "提示词工程中，通过逐步引导模型思考的方法称为 ______。",
+    "correctAnswer": "思维链"
+  },
+  {
+    "id": "fill_7",
+    "type": "fill_blank",
+    "section": "二、填空题",
+    "title": "RAG系统中，检索器通常使用 ______ 来表示查询和文档的语义信息。",
+    "correctAnswer": "向量嵌入"
+  },
+  {
+    "id": "fill_8",
+    "type": "fill_blank",
+    "section": "二、填空题",
+    "title": "AI Agent的决策过程通常基于 ______ 框架。",
+    "correctAnswer": "感知-决策-行动"
+  },
+  {
+    "id": "fill_9",
+    "type": "fill_blank",
+    "section": "二、填空题",
+    "title": "模型微调中，Prefix-tuning方法通过训练 ______ 来适配新任务。",
+    "correctAnswer": "前缀向量"
+  },
+  {
+    "id": "fill_10",
+    "type": "fill_blank",
+    "section": "二、填空题",
+    "title": "Linux中用于统计文件行数、词数、字符数的命令是 ______。",
+    "correctAnswer": "wc"
+  },
+  {
+    "id": "fill_11",
+    "type": "fill_blank",
+    "section": "二、填空题",
+    "title": "Linux中用于查看系统内存使用情况的命令是 ______。",
+    "correctAnswer": "free"
+  },
+  {
+    "id": "fill_12",
+    "type": "fill_blank",
+    "section": "二、填空题",
+    "title": "Python中用于创建不可变集合的数据类型是 ______。",
+    "correctAnswer": "frozenset"
+  },
+  {
+    "id": "fill_13",
+    "type": "fill_blank",
+    "section": "二、填空题",
+    "title": "在机器学习中，用于处理类别不平衡问题的采样技术是 ______。",
+    "correctAnswer": "SMOTE"
+  },
+  {
+    "id": "fill_14",
+    "type": "fill_blank",
+    "section": "二、填空题",
+    "title": "循环神经网络中，能够记忆长期依赖关系的门控机制是 ______。",
+    "correctAnswer": "LSTM"
+  },
+  {
+    "id": "fill_15",
+    "type": "fill_blank",
+    "section": "二、填空题",
+    "title": "Transformer模型中，用于计算不同位置之间相关性的机制是 ______。",
+    "correctAnswer": "自注意力"
+  },
+  {
+    "id": "fill_16",
+    "type": "fill_blank",
+    "section": "二、填空题",
+    "title": "在提示词工程中，通过提供任务描述而不给示例的方法称为 ______。",
+    "correctAnswer": "零样本学习"
+  },
+  {
+    "id": "fill_17",
+    "type": "fill_blank",
+    "section": "二、填空题",
+    "title": "RAG系统中，用于提高检索结果质量的重新排序技术是 ______。",
+    "correctAnswer": "重排序"
+  },
+  {
+    "id": "fill_18",
+    "type": "fill_blank",
+    "section": "二、填空题",
+    "title": "AI Agent中，能够从历史经验中学习改进决策的能力称为 ______。",
+    "correctAnswer": "强化学习"
+  },
+  {
+    "id": "fill_19",
+    "type": "fill_blank",
+    "section": "二、填空题",
+    "title": "模型微调中，只训练模型的一小部分参数的方法统称为 ______。",
+    "correctAnswer": "参数高效微调"
+  },
+  {
+    "id": "fill_20",
+    "type": "fill_blank",
+    "section": "二、填空题",
+    "title": "Linux中用于查看命令使用手册的命令是 ______。",
+    "correctAnswer": "man"
+  },
+  {
+    "id": "fill_21",
+    "type": "fill_blank",
+    "section": "二、填空题",
+    "title": "Linux中用于修改文件权限的命令是 ______",
+    "correctAnswer": "chmod"
+  },
+  {
+    "id": "fill_22",
+    "type": "fill_blank",
+    "section": "二、填空题",
+    "title": "Python中用于深度拷贝对象的函数是 ______。",
+    "correctAnswer": "copy.deepcopy()"
+  },
+  {
+    "id": "fill_23",
+    "type": "fill_blank",
+    "section": "二、填空题",
+    "title": "支持向量机(SVM)中用于处理线性不可分问题的技术是 ______。",
+    "correctAnswer": "核技巧"
+  },
+  {
+    "id": "fill_24",
+    "type": "fill_blank",
+    "section": "二、填空题",
+    "title": "循环神经网络中解决长期依赖问题的改进模型是 ______。",
+    "correctAnswer": "LSTM"
+  },
+  {
+    "id": "fill_25",
+    "type": "fill_blank",
+    "section": "二、填空题",
+    "title": "Transformer模型中计算注意力权重的公式涉及查询(Query)、键(Key)和 ______。",
+    "correctAnswer": "值"
+  },
+  {
+    "id": "fill_26",
+    "type": "fill_blank",
+    "section": "二、填空题",
+    "title": "提示词工程中，通过提供输入-输出示例来引导模型的方法称为 ______。",
+    "correctAnswer": "示例学习"
+  },
+  {
+    "id": "fill_27",
+    "type": "fill_blank",
+    "section": "二、填空题",
+    "title": "RAG系统中，检索器通常基于 ______ 技术来查找相关文档。",
+    "correctAnswer": "向量检索"
+  },
+  {
+    "id": "fill_28",
+    "type": "fill_blank",
+    "section": "二、填空题",
+    "title": "AI Agent的基本框架通常包括感知、规划、______ 和评估。",
+    "correctAnswer": "执行"
+  },
+  {
+    "id": "fill_29",
+    "type": "fill_blank",
+    "section": "二、填空题",
+    "title": "模型微调中，只训练部分参数而冻结其他参数的方法称为 ______。",
+    "correctAnswer": "参数高效微调"
+  },
+  {
+    "id": "fill_30",
+    "type": "fill_blank",
+    "section": "二、填空题",
+    "title": "Linux中用于实时监控文件内容变化的命令是 ______。",
+    "correctAnswer": "tail -f"
+  },
+  {
+    "id": "tf_1",
+    "type": "true_false",
+    "section": "三、判断题",
+    "title": "Linux中，rm -rf命令可以强制删除目录及其内容。",
+    "correctAnswer": true
+  },
+  {
+    "id": "tf_2",
+    "type": "true_false",
+    "section": "三、判断题",
+    "title": "Python中，列表推导式比普通for循环执行效率更高。",
+    "correctAnswer": true
+  },
+  {
+    "id": "tf_3",
+    "type": "true_false",
+    "section": "三、判断题",
+    "title": "深度学习模型总是比传统机器学习模型效果更好。",
+    "correctAnswer": false
+  },
+  {
+    "id": "tf_4",
+    "type": "true_false",
+    "section": "三、判断题",
+    "title": "Transformer模型完全基于循环神经网络构建。",
+    "correctAnswer": false
+  },
+  {
+    "id": "tf_5",
+    "type": "true_false",
+    "section": "三、判断题",
+    "title": "提示词工程不会影响大模型的计算复杂度。",
+    "correctAnswer": false
+  },
+  {
+    "id": "tf_6",
+    "type": "true_false",
+    "section": "三、判断题",
+    "title": "Linux中，kill -9命令可以强制终止任何进程。",
+    "correctAnswer": true
+  },
+  {
+    "id": "tf_7",
+    "type": "true_false",
+    "section": "三、判断题",
+    "title": "Python中，字典的键可以是任何可变对象。",
+    "correctAnswer": false
+  },
+  {
+    "id": "tf_8",
+    "type": "true_false",
+    "section": "三、判断题",
+    "title": "K近邻算法在训练阶段需要大量的计算。",
+    "correctAnswer": false
+  },
+  {
+    "id": "tf_9",
+    "type": "true_false",
+    "section": "三、判断题",
+    "title": "批量归一化(Batch Normalization)可以完全解决梯度消失问题。",
+    "correctAnswer": false
+  },
+  {
+    "id": "tf_10",
+    "type": "true_false",
+    "section": "三、判断题",
+    "title": "Transformer模型中的编码器和解码器层数必须相同。",
+    "correctAnswer": false
+  },
+  {
+    "id": "tf_11",
+    "type": "true_false",
+    "section": "三、判断题",
+    "title": "提示词中的温度参数设置为0可以保证生成结果完全确定。",
+    "correctAnswer": true
+  },
+  {
+    "id": "tf_12",
+    "type": "true_false",
+    "section": "三、判断题",
+    "title": "RAG系统中的检索器只能基于关键词匹配进行检索。",
+    "correctAnswer": false
+  },
+  {
+    "id": "tf_13",
+    "type": "true_false",
+    "section": "三、判断题",
+    "title": "AI Agent必须依赖于大语言模型才能实现智能决策。",
+    "correctAnswer": false
+  },
+  {
+    "id": "tf_14",
+    "type": "true_false",
+    "section": "三、判断题",
+    "title": "模型微调时，学习率通常应该设置得比预训练时更大。",
+    "correctAnswer": false
+  },
+  {
+    "id": "tf_15",
+    "type": "true_false",
+    "section": "三、判断题",
+    "title": "注意力机制中的softmax函数可以确保所有权重之和为1。",
+    "correctAnswer": true
+  },
+  {
+    "id": "tf_16",
+    "type": "true_false",
+    "section": "三、判断题",
+    "title": "Linux中，chmod 755 表示文件所有者有读写执行权限，其他用户只有读和执行权限。",
+    "correctAnswer": true
+  },
+  {
+    "id": "tf_17",
+    "type": "true_false",
+    "section": "三、判断题",
+    "title": "Python中，可变对象作为函数默认参数是安全的。",
+    "correctAnswer": false
+  },
+  {
+    "id": "tf_18",
+    "type": "true_false",
+    "section": "三、判断题",
+    "title": "深度学习模型层数越多，性能一定越好。",
+    "correctAnswer": false
+  },
+  {
+    "id": "tf_19",
+    "type": "true_false",
+    "section": "三、判断题",
+    "title": "Transformer模型完全基于卷积神经网络构建。",
+    "correctAnswer": false
+  },
+  {
+    "id": "tf_20",
+    "type": "true_false",
+    "section": "三、判断题",
+    "title": "提示词工程不会影响大模型的输出质量。",
+    "correctAnswer": false
+  },
+  {
+    "id": "short_1",
+    "type": "short_answer",
+    "section": "四、简答题",
+    "title": "简述Linux文件权限系统中rwx分别代表什么含义，以及数字表示法如何工作。",
+    "referenceAnswer": ""
+  },
+  {
+    "id": "short_2",
+    "type": "short_answer",
+    "section": "四、简答题",
+    "title": "解释Python中的深拷贝和浅拷贝的区别，并举例说明。",
+    "referenceAnswer": "\n浅拷贝：只复制对象本身，不复制嵌套对象（copy.copy()）\n深拷贝：递归复制对象及其所有嵌套对象（copy.deepcopy()）\n示例：列表包含子列表时，浅拷贝后修改子列表会影响原对象"
+  },
+  {
+    "id": "short_3",
+    "type": "short_answer",
+    "section": "四、简答题",
+    "title": "什么是过拟合和欠拟合？在深度学习中如何识别和解决过拟合问题？",
+    "referenceAnswer": "\n过拟合：模型在训练集表现好，测试集表现差，记忆了噪声\n欠拟合：模型在训练集和测试集表现都差，未能学习特征\n解决方法：增加数据、正则化、早停、Dropout、简化模型等"
+  },
+  {
+    "id": "short_4",
+    "type": "short_answer",
+    "section": "四、简答题",
+    "title": "简述Transformer模型中的自注意力机制(Self-Attention)是如何工作的。",
+    "referenceAnswer": "\n计算每个位置与其他所有位置的注意力权重\n通过Query、Key、Value计算：Attention = softmax(QKᵀ/√d)V\n允许模型关注输入序列中不同位置的相关信息\n解决了RNN的长距离依赖问题"
+  },
+  {
+    "id": "short_5",
+    "type": "short_answer",
+    "section": "四、简答题",
+    "title": "解释RAG(检索增强生成)系统的基本原理和工作流程。",
+    "referenceAnswer": "\n检索器：根据查询从知识库中检索相关文档\n生成器：结合检索到的文档和原始查询生成答案\n工作流程：查询→检索→文档排序→提示构造→生成答案\n优势：知识可更新、减少幻觉、提高准确性"
+  },
+  {
+    "id": "short_6",
+    "type": "short_answer",
+    "section": "四、简答题",
+    "title": "解释Linux中的软链接和硬链接的区别及其适用场景。",
+    "referenceAnswer": "\n软链接是一个独立的文件，包含原文件的路径信息，可以跨文件系统，原文件删除后链接失效。硬链接与原文件共享inode，必须在同一文件系统，原文件删除后链接仍有效。软链接适用于跨文件系统链接，硬链接适用于备份和防止误删。"
+  },
+  {
+    "id": "short_7",
+    "type": "short_answer",
+    "section": "四、简答题",
+    "title": "描述Python中的垃圾回收机制，特别是引用计数和循环垃圾收集的工作原理。",
+    "referenceAnswer": "\nPython使用引用计数和分代垃圾回收。引用计数跟踪对象被引用次数，归零时立即回收。循环垃圾收集处理引用计数无法解决的循环引用问题，通过分代收集策略提高效率。"
+  },
+  {
+    "id": "short_8",
+    "type": "short_answer",
+    "section": "四、简答题",
+    "title": "解释机器学习中的交叉验证原理及其在模型评估中的重要性。",
+    "referenceAnswer": "\n交叉验证将数据集分成k份，轮流用k-1份训练，1份测试，重复k次取平均。重要性在于充分利用数据、减少评估方差、提供更可靠的性能估计。"
+  },
+  {
+    "id": "short_9",
+    "type": "short_answer",
+    "section": "四、简答题",
+    "title": "描述卷积神经网络中感受野的概念及其在深层网络中的变化规律。",
+    "referenceAnswer": "\n感受野是输出特征图上的像素点在输入图像上映射区域的大小。随着网络加深，感受野逐渐增大，深层神经元能看到输入图像的更大范围。"
+  },
+  {
+    "id": "short_10",
+    "type": "short_answer",
+    "section": "四、简答题",
+    "title": "解释Transformer模型中的残差连接和层归一化如何协同工作以稳定训练过程。",
+    "referenceAnswer": "\n残差连接将输入直接加到输出，缓解梯度消失。层归一化对每个样本的特征进行标准化，稳定激活值分布。两者结合使深层网络训练更稳定。"
+  },
+  {
+    "id": "short_11",
+    "type": "short_answer",
+    "section": "四、简答题",
+    "title": "描述提示词工程中系统提示(System Prompt)和用户提示(User Prompt)的不同作用。",
+    "referenceAnswer": "\n系统提示定义模型角色和行为规范，用户提示提供具体任务指令。系统提示设置上下文，用户提示明确任务要求，两者配合引导模型输出。"
+  },
+  {
+    "id": "short_12",
+    "type": "short_answer",
+    "section": "四、简答题",
+    "title": "解释RAG系统中检索质量对生成结果的影响机制。",
+    "referenceAnswer": "\n检索质量直接影响生成器可用的信息质量。高质量检索提供相关文档，生成答案准确；低质量检索引入噪声，导致幻觉或错误答案。"
+  },
+  {
+    "id": "short_13",
+    "type": "short_answer",
+    "section": "四、简答题",
+    "title": "描述AI Agent中工具调用(Tool Calling)的工作原理及其在复杂任务中的作用。",
+    "referenceAnswer": "\n工具调用允许Agent使用外部工具处理任务。Agent分析需求，选择合适工具，传递参数，执行工具，整合结果。这扩展了Agent能力范围，可处理复杂任务。"
+  },
+  {
+    "id": "short_14",
+    "type": "short_answer",
+    "section": "四、简答题",
+    "title": "解释模型微调中的全参数微调与参数高效微调在计算资源和效果上的权衡。",
+    "referenceAnswer": "\n全参数微调效果可能更好但计算成本高；参数高效微调节省计算资源，效果接近全参数微调，更适合资源有限场景。"
+  },
+  {
+    "id": "short_15",
+    "type": "short_answer",
+    "section": "四、简答题",
+    "title": "描述大模型推理优化中的KV缓存技术原理及其对推理速度的提升机制。",
+    "referenceAnswer": "\nKV缓存存储之前时间步的Key和Value向量，避免重复计算。在自回归生成时，只需计算当前时间步的注意力，大幅提升推理速度。"
+  },
+  {
+    "id": "short_16",
+    "type": "short_answer",
+    "section": "四、简答题",
+    "title": "解释Linux中的管道(|)符号的作用，并举例说明。",
+    "referenceAnswer": "\n作用：管道(|)将一个命令的输出作为另一个命令的输入\n优势：组合简单命令完成复杂任务，提高命令行的灵活性和效率\n示例：ps aux | grep python | wc -l统计运行中的Python进程数量"
+  },
+  {
+    "id": "short_17",
+    "type": "short_answer",
+    "section": "四、简答题",
+    "title": "描述Python中的生成器(Generator)及其优势。",
+    "referenceAnswer": "\n定义：生成器是使用yield语句的特殊函数，返回迭代器\n优势：惰性求值，按需生成数据，节省内存空间\n应用：处理大数据流、无限序列、节省内存的场景"
+  },
+  {
+    "id": "short_18",
+    "type": "short_answer",
+    "section": "四、简答题",
+    "title": "比较监督学习、无监督学习和半监督学习的区别。",
+    "referenceAnswer": "\n监督学习：使用有标签数据训练，用于分类、回归等任务\n无监督学习：使用无标签数据发现模式，用于聚类、降维等\n半监督学习：结合少量标签数据和大量无标签数据，提高学习效率"
+  },
+  {
+    "id": "short_19",
+    "type": "short_answer",
+    "section": "四、简答题",
+    "title": "解释Transformer模型中的编码器-解码器架构。",
+    "referenceAnswer": "\n编码器：将输入序列编码为固定长度的上下文向量\n解码器：基于上下文向量逐步生成输出序列\n应用：机器翻译、文本摘要、语音识别等序列到序列任务"
+  },
+  {
+    "id": "short_20",
+    "type": "short_answer",
+    "section": "四、简答题",
+    "title": "描述大模型微调中的指令微调(Instruction Tuning)过程及其重要性。",
+    "referenceAnswer": "\n过程：在指令-响应对数据集上微调预训练模型\n重要性：使模型更好地理解和遵循人类指令\n效果：显著提高模型的指令遵循能力和零样本学习性能"
+  },
+  {
+    "id": "code_1",
+    "type": "code",
+    "section": "五、代码题",
+    "title": "编写脚本监控系统CPU和内存使用率，超过阈值时发送警告。",
+    "code": "#!/bin/bash\n#定义阈值\nCPU_THRESHOLD=80\nMEMORY_THRESHOLD=90\n#获取CPU使用率（去掉百分号）\nCPU_USAGE=$(top -bn1 | grep \"Cpu(s)\" | awk '{print $2}' | cut -d'%' -f1 | cut -d'.' -f1)\n#获取内存使用率\nMEMORY_USAGE=$(free | grep Mem | awk '{printf \"%.0f\", $3/$2 * 100}')\n#检查CPU使用率\nif [ $CPU_USAGE -gt $CPU_THRESHOLD ]; then\necho \"警告: CPU使用率 ${CPU_USAGE}% 超过阈值 ${CPU_THRESHOLD}%\" | mail -s \"系统监控警告\" admin@example.com\nfi\n#检查内存使用率\nif [ $MEMORY_USAGE -gt $MEMORY_THRESHOLD ]; then\necho \"警告: 内存使用率 ${MEMORY_USAGE}% 超过阈值 ${MEMORY_THRESHOLD}%\" | mail -s \"系统监控警告\" admin@example.com\nfi\necho \"监控完成: CPU=${CPU_USAGE}%, 内存=${MEMORY_USAGE}%\"2. 题目：使用生成器实现斐波那契数列，并演示惰性求值优势。\ndef fibonacci_generator():\n\"\"\"生成器实现斐波那契数列\"\"\"\na, b = 0, 1\nwhile True:\nyield a\na, b = b, a + b\n#演示惰性求值优势\ndef demo_lazy_evaluation():\n# 创建生成器\nfib_gen = fibonacci_generator()\n# 只获取前20个斐波那契数，不会计算整个无限序列\nfirst_20 = [next(fib_gen) for _ in range(20)]\nprint(\"前20个斐波那契数:\", first_20)\n# 内存效率演示：生成器不存储所有值\nimport sys\nfib_gen2 = fibonacci_generator()\nsize_small = sys.getsizeof(fib_gen2)\n# 对比列表存储所有值的内存占用\nfib_list = [next(fibonacci_generator()) for _ in range(1000)]\nsize_large = sys.getsizeof(fib_list)\nprint(f\"生成器内存占用: {size_small} bytes\")\nprint(f\"列表内存占用: {size_large} bytes\")\nprint(f\"内存节省: {size_large - size_small} bytes\")\nif name == \"main\":\ndemo_lazy_evaluation()3.题目：使用Hugging Face Transformers库实现文本摘要任务。\nfrom transformers import pipeline, AutoTokenizer, AutoModelForSeq2SeqLM\nimport torch\nclass TextSummarizer:\ndef init(self, model_name=\"facebook/bart-large-cnn\"):\n\"\"\"初始化文本摘要器\"\"\"\nself.tokenizer = AutoTokenizer.from_pretrained(model_name)\nself.model = AutoModelForSeq2SeqLM.from_pretrained(model_name)\n# 使用pipeline简化操作\nself.summarizer = pipeline(\"summarization\",\nmodel=model_name,\ntokenizer=model_name)\ndef summarize(self, text, max_length=150, min_length=50):\n\"\"\"生成文本摘要\"\"\"\n# 预处理文本\nif len(text.split()) < 50:\nreturn \"文本过短，无法生成有效摘要\"\n# 生成摘要\nsummary = self.summarizer(text,\nmax_length=max_length,\nmin_length=min_length,\ndo_sample=False)\nreturn summary[0]['summary_text']\ndef evaluate_summary(self, original_text, summary):\n\"\"\"评估摘要质量\"\"\"\n# 计算压缩比\norig_words = len(original_text.split())\nsumm_words = len(summary.split())\ncompression_ratio = (orig_words - summ_words) / orig_words * 100\nprint(f\"原文长度: {orig_words} 词\")\nprint(f\"摘要长度: {summ_words} 词\")\nprint(f\"压缩率: {compression_ratio:.1f}%\")\n# 简单的内容保留评估\nimportant_words = set(original_text.lower().split()[:10])  # 取前10个词作为重要词\npreserved_words = important_words.intersection(set(summary.lower().split()))\npreservation_rate = len(preserved_words) / len(important_words) * 100\nprint(f\"重要词保留率: {preservation_rate:.1f}%\")\n# 使用示例\nif name == \"main\":\n# 创建摘要器\nsummarizer = TextSummarizer()\n# 示例文本\nsample_text = \"\"\"\n人工智能是计算机科学的一个分支，它企图了解智能的实质，并生产出一种新的能以人类智能相似的方式做出反应的智能机器。\n该领域的研究包括机器人、语言识别、图像识别、自然语言处理和专家系统等。人工智能从诞生以来，理论和技术日益成熟，\n应用领域也不断扩大，可以设想，未来人工智能带来的科技产品，将会是人类智慧的容器。人工智能可以对人的意识、思维的信息过程的模拟。\n人工智能不是人的智能，但能像人那样思考，也可能超过人的智能。\n\"\"\" # 生成摘要\nsummary = summarizer.summarize(sample_text)\nprint(\"生成的摘要:\", summary)\nprint(\"\\n\" + \"=\"*50)\n#评估摘要质量\nsummarizer.evaluate_summary(sample_text, summary)4.题目：编写一个Shell脚本，实现备份指定目录下最近7天内修改过的.py文件到备份目录，并自动删除30天前的备份文件。\n#!/bin/bash\n#定义源目录和备份目录\nSOURCE_DIR=\"/home/user/projects\"\nBACKUP_DIR=\"/home/user/backups\"\n#创建备份目录（如果不存在）\nmkdir -p $BACKUP_DIR\n#备份最近7天内修改过的.py文件\nfind $SOURCE_DIR -name \"*.py\" -mtime -7 -exec cp {} $BACKUP_DIR ;\n#删除30天前的备份文件\nfind $BACKUP_DIR -name \"*.py\" -mtime +30 -delete\necho \"备份完成！\"5.题目：使用Pandas读取CSV文件，清洗数据（处理缺失值、异常值），并进行简单的统计分析。\nimport pandas as pd\nimport numpy as np\n#读取CSV文件\ndata = pd.read_csv('data.csv')\n#数据清洗：处理缺失值\ndata.fillna(method='ffill', inplace=True)  # 前向填充\n#处理异常值：使用3σ原则\nfor col in data.select_dtypes(include=[np.number]).columns:\nmean = data[col].mean()\nstd = data[col].std()\ndata = data[(data[col] > mean - 3std) & (data[col] < mean + 3std)]\n#统计分析\nprint(\"数据基本信息：\")\nprint(data.info())\nprint(\"\\n描述性统计：\")\nprint(data.describe())\nprint(\"\\n相关性矩阵：\")\nprint(data.corr())6.题目：使用PyTorch或TensorFlow实现一个简单的Transformer模型进行文本分类。\n参考答案：\nimport torch\nimport torch.nn as nn\nfrom transformers import BertTokenizer, BertForSequenceClassification\n#加载预训练模型和分词器\ntokenizer = BertTokenizer.from_pretrained('bert-base-uncased')\nmodel = BertForSequenceClassification.from_pretrained('bert-base-uncased', num_labels=2)\n#示例数据\ntexts = [\"This is a positive review\", \"This product is bad\"]\nlabels = [1, 0]\n#数据预处理\ninputs = tokenizer(texts, padding=True, truncation=True, return_tensors=\"pt\")\n#模型训练（简化示例）\noptimizer = torch.optim.AdamW(model.parameters(), lr=1e-5)\nfor epoch in range(3):\noutputs = model(**inputs, labels=torch.tensor(labels))\nloss = outputs.loss\nloss.backward()\noptimizer.step()\noptimizer.zero_grad()\nprint(f\"Epoch {epoch+1}, Loss: {loss.item():.4f}\")\n#模型预测\nwith torch.no_grad():\noutputs = model(**inputs)\npredictions = torch.argmax(outputs.logits, dim=1)\nprint(f\"预测结果: {predictions}\")",
+    "language": "python",
+    "note": "请查资料补全代码注释"
+  }
+]

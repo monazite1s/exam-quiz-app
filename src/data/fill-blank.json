@@ -1,0 +1,212 @@
+[
+  {
+    "id": "fill_1",
+    "type": "fill_blank",
+    "section": "二、填空题",
+    "title": "Linux中用于查找命令所在路径的命令是 ______。",
+    "correctAnswer": "Which"
+  },
+  {
+    "id": "fill_2",
+    "type": "fill_blank",
+    "section": "二、填空题",
+    "title": "Python中用于创建匿名函数的关键字是 ______。",
+    "correctAnswer": "Lambda"
+  },
+  {
+    "id": "fill_3",
+    "type": "fill_blank",
+    "section": "二、填空题",
+    "title": "主成分分析(PCA)的主要目的是 ______。",
+    "correctAnswer": "降维"
+  },
+  {
+    "id": "fill_4",
+    "type": "fill_blank",
+    "section": "二、填空题",
+    "title": "生成对抗网络(GAN)由生成器和 ______ 组成。",
+    "correctAnswer": "判别器"
+  },
+  {
+    "id": "fill_5",
+    "type": "fill_blank",
+    "section": "二、填空题",
+    "title": "Transformer模型中，多头注意力机制(Multi-Head Attention)允许模型同时关注不同 ______。",
+    "correctAnswer": "表示子空间"
+  },
+  {
+    "id": "fill_6",
+    "type": "fill_blank",
+    "section": "二、填空题",
+    "title": "提示词工程中，通过逐步引导模型思考的方法称为 ______。",
+    "correctAnswer": "思维链"
+  },
+  {
+    "id": "fill_7",
+    "type": "fill_blank",
+    "section": "二、填空题",
+    "title": "RAG系统中，检索器通常使用 ______ 来表示查询和文档的语义信息。",
+    "correctAnswer": "向量嵌入"
+  },
+  {
+    "id": "fill_8",
+    "type": "fill_blank",
+    "section": "二、填空题",
+    "title": "AI Agent的决策过程通常基于 ______ 框架。",
+    "correctAnswer": "感知-决策-行动"
+  },
+  {
+    "id": "fill_9",
+    "type": "fill_blank",
+    "section": "二、填空题",
+    "title": "模型微调中，Prefix-tuning方法通过训练 ______ 来适配新任务。",
+    "correctAnswer": "前缀向量"
+  },
+  {
+    "id": "fill_10",
+    "type": "fill_blank",
+    "section": "二、填空题",
+    "title": "Linux中用于统计文件行数、词数、字符数的命令是 ______。",
+    "correctAnswer": "wc"
+  },
+  {
+    "id": "fill_11",
+    "type": "fill_blank",
+    "section": "二、填空题",
+    "title": "Linux中用于查看系统内存使用情况的命令是 ______。",
+    "correctAnswer": "free"
+  },
+  {
+    "id": "fill_12",
+    "type": "fill_blank",
+    "section": "二、填空题",
+    "title": "Python中用于创建不可变集合的数据类型是 ______。",
+    "correctAnswer": "frozenset"
+  },
+  {
+    "id": "fill_13",
+    "type": "fill_blank",
+    "section": "二、填空题",
+    "title": "在机器学习中，用于处理类别不平衡问题的采样技术是 ______。",
+    "correctAnswer": "SMOTE"
+  },
+  {
+    "id": "fill_14",
+    "type": "fill_blank",
+    "section": "二、填空题",
+    "title": "循环神经网络中，能够记忆长期依赖关系的门控机制是 ______。",
+    "correctAnswer": "LSTM"
+  },
+  {
+    "id": "fill_15",
+    "type": "fill_blank",
+    "section": "二、填空题",
+    "title": "Transformer模型中，用于计算不同位置之间相关性的机制是 ______。",
+    "correctAnswer": "自注意力"
+  },
+  {
+    "id": "fill_16",
+    "type": "fill_blank",
+    "section": "二、填空题",
+    "title": "在提示词工程中，通过提供任务描述而不给示例的方法称为 ______。",
+    "correctAnswer": "零样本学习"
+  },
+  {
+    "id": "fill_17",
+    "type": "fill_blank",
+    "section": "二、填空题",
+    "title": "RAG系统中，用于提高检索结果质量的重新排序技术是 ______。",
+    "correctAnswer": "重排序"
+  },
+  {
+    "id": "fill_18",
+    "type": "fill_blank",
+    "section": "二、填空题",
+    "title": "AI Agent中，能够从历史经验中学习改进决策的能力称为 ______。",
+    "correctAnswer": "强化学习"
+  },
+  {
+    "id": "fill_19",
+    "type": "fill_blank",
+    "section": "二、填空题",
+    "title": "模型微调中，只训练模型的一小部分参数的方法统称为 ______。",
+    "correctAnswer": "参数高效微调"
+  },
+  {
+    "id": "fill_20",
+    "type": "fill_blank",
+    "section": "二、填空题",
+    "title": "Linux中用于查看命令使用手册的命令是 ______。",
+    "correctAnswer": "man"
+  },
+  {
+    "id": "fill_21",
+    "type": "fill_blank",
+    "section": "二、填空题",
+    "title": "Linux中用于修改文件权限的命令是 ______",
+    "correctAnswer": "chmod"
+  },
+  {
+    "id": "fill_22",
+    "type": "fill_blank",
+    "section": "二、填空题",
+    "title": "Python中用于深度拷贝对象的函数是 ______。",
+    "correctAnswer": "copy.deepcopy()"
+  },
+  {
+    "id": "fill_23",
+    "type": "fill_blank",
+    "section": "二、填空题",
+    "title": "支持向量机(SVM)中用于处理线性不可分问题的技术是 ______。",
+    "correctAnswer": "核技巧"
+  },
+  {
+    "id": "fill_24",
+    "type": "fill_blank",
+    "section": "二、填空题",
+    "title": "循环神经网络中解决长期依赖问题的改进模型是 ______。",
+    "correctAnswer": "LSTM"
+  },
+  {
+    "id": "fill_25",
+    "type": "fill_blank",
+    "section": "二、填空题",
+    "title": "Transformer模型中计算注意力权重的公式涉及查询(Query)、键(Key)和 ______。",
+    "correctAnswer": "值"
+  },
+  {
+    "id": "fill_26",
+    "type": "fill_blank",
+    "section": "二、填空题",
+    "title": "提示词工程中，通过提供输入-输出示例来引导模型的方法称为 ______。",
+    "correctAnswer": "示例学习"
+  },
+  {
+    "id": "fill_27",
+    "type": "fill_blank",
+    "section": "二、填空题",
+    "title": "RAG系统中，检索器通常基于 ______ 技术来查找相关文档。",
+    "correctAnswer": "向量检索"
+  },
+  {
+    "id": "fill_28",
+    "type": "fill_blank",
+    "section": "二、填空题",
+    "title": "AI Agent的基本框架通常包括感知、规划、______ 和评估。",
+    "correctAnswer": "执行"
+  },
+  {
+    "id": "fill_29",
+    "type": "fill_blank",
+    "section": "二、填空题",
+    "title": "模型微调中，只训练部分参数而冻结其他参数的方法称为 ______。",
+    "correctAnswer": "参数高效微调"
+  },
+  {
+    "id": "fill_30",
+    "type": "fill_blank",
+    "section": "二、填空题",
+    "title": "Linux中用于实时监控文件内容变化的命令是 ______。",
+    "correctAnswer": "tail -f"
+  }
+]

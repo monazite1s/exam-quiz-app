@@ -1,0 +1,138 @@
+.container {
+  background: var(--color-bg-primary);
+  border-radius: var(--radius-lg);
+  padding: var(--spacing-lg);
+  box-shadow: var(--shadow-md);
+  margin-bottom: var(--spacing-lg);
+  position: sticky;
+  top: var(--spacing-md);
+  z-index: 10;
+}
+
+/* 统计信息网格 */
+.stats {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+  gap: var(--spacing-md);
+  margin-bottom: var(--spacing-md);
+}
+
+.statItem {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: var(--spacing-xs);
+}
+
+.statLabel {
+  font-size: 0.75rem;
+  color: var(--color-text-secondary);
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  font-weight: 500;
+}
+
+.statValue {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: var(--color-text-primary);
+}
+
+.statValue.correct {
+  color: var(--color-success);
+}
+
+.statValue.incorrect {
+  color: var(--color-error);
+}
+
+/* 进度条 */
+.progressBarWrapper {
+  margin-top: var(--spacing-md);
+}
+
+.progressBarBg {
+  width: 100%;
+  height: 32px;
+  background: var(--color-bg-tertiary);
+  border-radius: var(--radius-lg);
+  overflow: hidden;
+  position: relative;
+  box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.progressBarFill {
+  height: 100%;
+  background: linear-gradient(
+    90deg,
+    var(--color-primary) 0%,
+    var(--color-primary-hover) 100%
+  );
+  border-radius: var(--radius-lg);
+  transition: width 0.5s ease-out;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  padding-right: var(--spacing-md);
+  position: relative;
+  overflow: hidden;
+}
+
+.progressBarFill::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: linear-gradient(
+    90deg,
+    transparent 0%,
+    rgba(255, 255, 255, 0.2) 50%,
+    transparent 100%
+  );
+  animation: shimmer 2s infinite;
+}
+
+@keyframes shimmer {
+  0% {
+    transform: translateX(-100%);
+  }
+  100% {
+    transform: translateX(100%);
+  }
+}
+
+.progressText {
+  font-size: 0.875rem;
+  font-weight: 600;
+  color: white;
+  position: relative;
+  z-index: 1;
+  text-shadow: 0 1px 2px rgba(0, 0, 0, 0.2);
+}
+
+/* 移动端适配 */
+@media (max-width: 640px) {
+  .container {
+    padding: var(--spacing-md);
+    position: static;
+  }
+
+  .stats {
+    grid-template-columns: repeat(2, 1fr);
+    gap: var(--spacing-sm);
+  }
+
+  .statValue {
+    font-size: 1.25rem;
+  }
+
+  .progressBarBg {
+    height: 28px;
+  }
+
+  .progressText {
+    font-size: 0.75rem;
+  }
+}

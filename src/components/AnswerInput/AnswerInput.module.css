@@ -1,0 +1,182 @@
+.inputGroup {
+  margin-top: var(--spacing-lg);
+  padding: var(--spacing-lg);
+  background: var(--color-bg-secondary);
+  border-radius: var(--radius-lg);
+  border: 2px dashed var(--color-border);
+}
+
+.label {
+  display: block;
+  font-weight: 500;
+  color: var(--color-text-primary);
+  margin-bottom: var(--spacing-md);
+  font-size: 1rem;
+}
+
+/* 单选按钮组 */
+.radioGroup {
+  display: flex;
+  gap: var(--spacing-md);
+  flex-wrap: wrap;
+}
+
+.radioButton {
+  flex: 1;
+  min-width: 60px;
+  padding: var(--spacing-md);
+  background: var(--color-bg-primary);
+  border: 2px solid var(--color-border);
+  border-radius: var(--radius-md);
+  font-size: 1.25rem;
+  font-weight: 600;
+  color: var(--color-text-primary);
+  cursor: pointer;
+  transition: all var(--transition-fast);
+}
+
+.radioButton:hover:not(:disabled) {
+  border-color: var(--color-primary);
+  background: var(--color-bg-tertiary);
+  transform: translateY(-2px);
+}
+
+.radioButton.selected {
+  background: var(--color-primary);
+  border-color: var(--color-primary);
+  color: white;
+  box-shadow: var(--shadow-md);
+}
+
+.radioButton:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+/* 文本输入框 */
+.textInput {
+  width: 100%;
+  padding: var(--spacing-md);
+  font-size: 1rem;
+  border: 2px solid var(--color-border);
+  border-radius: var(--radius-md);
+  background: var(--color-bg-primary);
+  color: var(--color-text-primary);
+  transition: all var(--transition-fast);
+}
+
+.textInput:focus {
+  border-color: var(--color-primary);
+  box-shadow: 0 0 0 3px rgba(79, 70, 229, 0.1);
+}
+
+.textInput:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+  background: var(--color-bg-tertiary);
+}
+
+/* 判断题按钮组 */
+.booleanGroup {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: var(--spacing-md);
+}
+
+.booleanButton {
+  padding: var(--spacing-lg);
+  background: var(--color-bg-primary);
+  border: 2px solid var(--color-border);
+  border-radius: var(--radius-md);
+  font-size: 1rem;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all var(--transition-fast);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: var(--spacing-sm);
+}
+
+.booleanButton .icon {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.booleanButton:hover:not(:disabled) {
+  transform: translateY(-2px);
+  box-shadow: var(--shadow-md);
+}
+
+.booleanButton.correct:hover:not(:disabled) {
+  border-color: var(--color-success);
+  background: rgba(16, 185, 129, 0.1);
+}
+
+.booleanButton.incorrect:hover:not(:disabled) {
+  border-color: var(--color-error);
+  background: rgba(239, 68, 68, 0.1);
+}
+
+.booleanButton.correct.selected {
+  background: var(--color-success);
+  border-color: var(--color-success);
+  color: white;
+}
+
+.booleanButton.incorrect.selected {
+  background: var(--color-error);
+  border-color: var(--color-error);
+  color: white;
+}
+
+.booleanButton:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+/* 信息提示框 */
+.infoBox {
+  display: flex;
+  align-items: center;
+  gap: var(--spacing-sm);
+  padding: var(--spacing-md);
+  background: #eff6ff;
+  border: 1px solid #bfdbfe;
+  border-radius: var(--radius-md);
+  color: #1e40af;
+  font-size: 0.9375rem;
+}
+
+.infoIcon {
+  font-size: 1.25rem;
+}
+
+/* 移动端适配 */
+@media (max-width: 640px) {
+  .inputGroup {
+    padding: var(--spacing-md);
+  }
+
+  .radioGroup {
+    gap: var(--spacing-sm);
+  }
+
+  .radioButton {
+    min-width: 50px;
+    padding: var(--spacing-sm) var(--spacing-md);
+  }
+
+  .booleanGroup {
+    gap: var(--spacing-sm);
+  }
+
+  .booleanButton {
+    padding: var(--spacing-md);
+    font-size: 0.9375rem;
+  }
+
+  .booleanButton .icon {
+    font-size: 1.25rem;
+  }
+}

@@ -1,0 +1,568 @@
+[
+  {
+    "id": "single_1",
+    "type": "single_choice",
+    "section": "一、选择题",
+    "title": "Linux中哪个命令用于查看系统进程信息？",
+    "options": [
+      "A. Ps    B. ls    C. top    D. A和C"
+    ],
+    "correctAnswer": "D"
+  },
+  {
+    "id": "single_2",
+    "type": "single_choice",
+    "section": "一、选择题",
+    "title": "Python中哪个关键字用于定义函数？",
+    "options": [
+      "A. function",
+      "B. def",
+      "C. define",
+      "D. func"
+    ],
+    "correctAnswer": "B"
+  },
+  {
+    "id": "single_3",
+    "type": "single_choice",
+    "section": "一、选择题",
+    "title": "随机森林算法属于哪种集成学习方法？",
+    "options": [
+      "A. Bagging",
+      "B. Boosting",
+      "C. Stacking",
+      "D. Blending"
+    ],
+    "correctAnswer": "A"
+  },
+  {
+    "id": "single_4",
+    "type": "single_choice",
+    "section": "一、选择题",
+    "title": "深度学习中的批量归一化(BatchNorm)主要作用是：",
+    "options": [
+      "A. 增加模型容量",
+      "B. 加速训练并提高稳定性",
+      "C. 减少参数数量",
+      "D. 防止梯度爆炸"
+    ],
+    "correctAnswer": "B"
+  },
+  {
+    "id": "single_5",
+    "type": "single_choice",
+    "section": "一、选择题",
+    "title": "Transformer模型中的位置编码(Positional Encoding)用于：",
+    "options": [
+      "A. 增加模型参数",
+      "B. 提供序列位置信息",
+      "C. 提高计算效率",
+      "D. 减少过拟合"
+    ],
+    "correctAnswer": "B"
+  },
+  {
+    "id": "single_6",
+    "type": "single_choice",
+    "section": "一、选择题",
+    "title": "Linux中哪个命令用于显示当前工作目录的完整路径？",
+    "options": [
+      "A. Ls    B. pwd    C. cd    D. whereis"
+    ],
+    "correctAnswer": "B"
+  },
+  {
+    "id": "single_7",
+    "type": "single_choice",
+    "section": "一、选择题",
+    "title": "Python中用于创建虚拟环境的命令是？",
+    "options": [
+      "A. python create env",
+      "B. pip install venv",
+      "C. python -m venv",
+      "D. conda make env"
+    ],
+    "correctAnswer": "C"
+  },
+  {
+    "id": "single_8",
+    "type": "single_choice",
+    "section": "一、选择题",
+    "title": "在机器学习中，K-近邻算法属于哪种学习类型？",
+    "options": [
+      "A. 监督学习",
+      "B. 无监督学习",
+      "C. 半监督学习",
+      "D. 强化学习"
+    ],
+    "correctAnswer": "A"
+  },
+  {
+    "id": "single_9",
+    "type": "single_choice",
+    "section": "一、选择题",
+    "title": "深度学习中的Dropout技术主要用于：",
+    "options": [
+      "A. 数据增强",
+      "B. 防止过拟合",
+      "C. 加速训练",
+      "D. 特征提取"
+    ],
+    "correctAnswer": "B"
+  },
+  {
+    "id": "single_10",
+    "type": "single_choice",
+    "section": "一、选择题",
+    "title": "Transformer模型的核心机制是：",
+    "options": [
+      "A. 卷积操作",
+      "B. 循环连接",
+      "C. 注意力机制",
+      "D. 池化层"
+    ],
+    "correctAnswer": "C"
+  },
+  {
+    "id": "single_11",
+    "type": "single_choice",
+    "section": "一、选择题",
+    "title": "Linux中哪个命令可以实时监控文件内容的变化？",
+    "options": [
+      "A. cat",
+      "B. tail -f",
+      "C. head",
+      "D. more"
+    ],
+    "correctAnswer": "B"
+  },
+  {
+    "id": "single_12",
+    "type": "single_choice",
+    "section": "一、选择题",
+    "title": "Python中用于创建生成器的关键字是？",
+    "options": [
+      "A. function",
+      "B. generator",
+      "C. yield",
+      "D. return"
+    ],
+    "correctAnswer": "C"
+  },
+  {
+    "id": "single_13",
+    "type": "single_choice",
+    "section": "一、选择题",
+    "title": "支持向量机(SVM)中，用于处理非线性可分问题的技术是？",
+    "options": [
+      "A. 正则化",
+      "B. 核技巧",
+      "C. 特征选择",
+      "D. 数据标准化"
+    ],
+    "correctAnswer": "B"
+  },
+  {
+    "id": "single_14",
+    "type": "single_choice",
+    "section": "一、选择题",
+    "title": "深度学习中的梯度消失问题在哪种网络中最严重？",
+    "options": [
+      "A. 卷积神经网络",
+      "B. 循环神经网络",
+      "C. 自编码器",
+      "D. 生成对抗网络"
+    ],
+    "correctAnswer": "B"
+  },
+  {
+    "id": "single_15",
+    "type": "single_choice",
+    "section": "一、选择题",
+    "title": "Transformer模型中的位置编码主要用于解决什么问题？",
+    "options": [
+      "A. 提高计算效率",
+      "B. 提供序列位置信息",
+      "C. 减少模型参数",
+      "D. 防止过拟合"
+    ],
+    "correctAnswer": "B"
+  },
+  {
+    "id": "single_16",
+    "type": "single_choice",
+    "section": "一、选择题",
+    "title": "在提示词工程中，\"思维链(Chain-of-Thought)\"的主要作用是？",
+    "options": [
+      "A. 减少响应时间",
+      "B. 提高推理透明度",
+      "C. 降低计算成本",
+      "D. 增加输出长度"
+    ],
+    "correctAnswer": "B"
+  },
+  {
+    "id": "single_17",
+    "type": "single_choice",
+    "section": "一、选择题",
+    "title": "RAG系统中，检索器通常基于什么技术查找相关文档？",
+    "options": [
+      "A. 关键词匹配",
+      "B. 向量相似度",
+      "C. 正则表达式",
+      "D. 模糊搜索"
+    ],
+    "correctAnswer": "B"
+  },
+  {
+    "id": "single_18",
+    "type": "single_choice",
+    "section": "一、选择题",
+    "title": "AI Agent的基本框架不包括以下哪个部分？",
+    "options": [
+      "A. 感知",
+      "B. 规划",
+      "C. 自我复制",
+      "D. 执行"
+    ],
+    "correctAnswer": "C"
+  },
+  {
+    "id": "single_19",
+    "type": "single_choice",
+    "section": "一、选择题",
+    "title": "模型微调中的LoRA技术主要特点是？",
+    "options": [
+      "A. 修改所有参数",
+      "B. 低秩矩阵适配",
+      "C. 只训练偏置项",
+      "D. 增加网络深度"
+    ],
+    "correctAnswer": "B"
+  },
+  {
+    "id": "single_20",
+    "type": "single_choice",
+    "section": "一、选择题",
+    "title": "Linux中用于查看网络连接状态的命令是？",
+    "options": [
+      "A. netstat",
+      "B. ping",
+      "C. ifconfig",
+      "D. curl"
+    ],
+    "correctAnswer": "A"
+  },
+  {
+    "id": "single_21",
+    "type": "single_choice",
+    "section": "一、选择题",
+    "title": "在提示词工程中，\"Temperature\"参数主要控制：",
+    "options": [
+      "A. 生成速度",
+      "B. 输出的随机性",
+      "C. 内存使用",
+      "D. 模型大小"
+    ],
+    "correctAnswer": "B"
+  },
+  {
+    "id": "single_22",
+    "type": "single_choice",
+    "section": "一、选择题",
+    "title": "RAG系统中，重排序(Reranking)阶段的主要目的是：",
+    "options": [
+      "A. 减少检索时间",
+      "B. 提高检索结果的相关性",
+      "C. 压缩检索结果",
+      "D. 格式化输出"
+    ],
+    "correctAnswer": "B"
+  },
+  {
+    "id": "single_23",
+    "type": "single_choice",
+    "section": "一、选择题",
+    "title": "AI Agent中的\"反思(Reflection)\"能力指的是：",
+    "options": [
+      "A. 从历史经验中学习",
+      "B. 评估自身行动效果",
+      "C. 模仿人类行为",
+      "D. 快速响应环境变化"
+    ],
+    "correctAnswer": "B"
+  },
+  {
+    "id": "single_24",
+    "type": "single_choice",
+    "section": "一、选择题",
+    "title": "模型微调中的Adapter方法的主要特点是：",
+    "options": [
+      "A. 在Transformer层间插入小型神经网络",
+      "B. 只训练偏置项",
+      "C. 冻结所有参数",
+      "D. 重新训练整个模型"
+    ],
+    "correctAnswer": "A"
+  },
+  {
+    "id": "single_25",
+    "type": "single_choice",
+    "section": "一、选择题",
+    "title": "Linux中用于查看文件开头内容的命令是：",
+    "options": [
+      "A. head",
+      "B. tail",
+      "C. cat",
+      "D. less"
+    ],
+    "correctAnswer": "A"
+  },
+  {
+    "id": "single_26",
+    "type": "single_choice",
+    "section": "一、选择题",
+    "title": "Python中的装饰器(Decorator)主要用于：",
+    "options": [
+      "A. 修改函数或类的行为",
+      "B. 创建新的数据类型",
+      "C. 优化代码执行速度",
+      "D. 处理异常"
+    ],
+    "correctAnswer": "A"
+  },
+  {
+    "id": "single_27",
+    "type": "single_choice",
+    "section": "一、选择题",
+    "title": "在提示词工程中，\"Few-shot learning\"指的是：",
+    "options": [
+      "A. 不提供任何示例",
+      "B. 提供大量示例",
+      "C. 提供少量示例",
+      "D. 只提供负例"
+    ],
+    "correctAnswer": "C"
+  },
+  {
+    "id": "single_28",
+    "type": "single_choice",
+    "section": "一、选择题",
+    "title": "RAG（检索增强生成）模型的主要优势是：",
+    "options": [
+      "A. 训练速度更快",
+      "B. 能够访问外部知识",
+      "C. 模型参数更少",
+      "D. 不需要预处理数据"
+    ],
+    "correctAnswer": "B"
+  },
+  {
+    "id": "single_29",
+    "type": "single_choice",
+    "section": "一、选择题",
+    "title": "AI Agent的核心能力不包括：",
+    "options": [
+      "A. 感知环境",
+      "B. 决策行动",
+      "C. 自我复制",
+      "D. 学习改进"
+    ],
+    "correctAnswer": "C"
+  },
+  {
+    "id": "single_30",
+    "type": "single_choice",
+    "section": "一、选择题",
+    "title": "模型微调中，LoRA（Low-Rank Adaptation）技术的主要特点是：",
+    "options": [
+      "A. 修改所有参数",
+      "B. 只训练偏置项",
+      "C. 低秩矩阵适配",
+      "D. 增加网络层数"
+    ],
+    "correctAnswer": "C"
+  },
+  {
+    "id": "single_31",
+    "type": "single_choice",
+    "section": "一、选择题",
+    "title": "Linux中用于查找文件的命令是：",
+    "options": [
+      "A. find",
+      "B. search",
+      "C. locate",
+      "D. grep"
+    ],
+    "correctAnswer": "A"
+  },
+  {
+    "id": "single_32",
+    "type": "single_choice",
+    "section": "一、选择题",
+    "title": "Python中列表和元组的主要区别是：",
+    "options": [
+      "A. 列表可变，元组不可变",
+      "B. 列表有序，元组无序",
+      "C. 列表可哈希，元组不可哈希",
+      "D. 列表支持索引，元组不支持"
+    ],
+    "correctAnswer": "A"
+  },
+  {
+    "id": "single_33",
+    "type": "single_choice",
+    "section": "一、选择题",
+    "title": "K-means聚类算法属于哪种学习类型？",
+    "options": [
+      "A. 监督学习",
+      "B. 无监督学习",
+      "C. 半监督学习",
+      "D. 强化学习"
+    ],
+    "correctAnswer": "B"
+  },
+  {
+    "id": "single_34",
+    "type": "single_choice",
+    "section": "一、选择题",
+    "title": "BERT模型预训练的主要任务是？",
+    "options": [
+      "A. 下一句预测和掩码语言模型",
+      "B. 文本分类和情感分析",
+      "C. 机器翻译和文本生成",
+      "D. 命名实体识别和关系抽取"
+    ],
+    "correctAnswer": "A"
+  },
+  {
+    "id": "single_35",
+    "type": "single_choice",
+    "section": "一、选择题",
+    "title": "在提示词设计中，角色扮演(Role-playing)的主要作用是？",
+    "options": [
+      "A. 限制模型输出长度",
+      "B. 引导模型以特定身份回答问题",
+      "C. 提高模型推理速度",
+      "D. 减少计算资源消耗"
+    ],
+    "correctAnswer": "B"
+  },
+  {
+    "id": "single_36",
+    "type": "single_choice",
+    "section": "一、选择题",
+    "title": "知识蒸馏(Knowledge Distillation)的主要目的是？",
+    "options": [
+      "A. 训练更大的模型",
+      "B. 将大模型知识迁移到小模型",
+      "C. 增加模型多样性",
+      "D. 提高训练速度"
+    ],
+    "correctAnswer": "B"
+  },
+  {
+    "id": "single_37",
+    "type": "single_choice",
+    "section": "一、选择题",
+    "title": "Python中列表推导式相比普通for循环的主要优势是？",
+    "options": [
+      "A. 语法更简洁",
+      "B. 执行效率更高",
+      "C. 可读性更好",
+      "D. 支持更多功能"
+    ],
+    "correctAnswer": "B"
+  },
+  {
+    "id": "single_38",
+    "type": "single_choice",
+    "section": "一、选择题",
+    "title": "随机森林算法通过什么方法降低过拟合风险？",
+    "options": [
+      "A.  Bagging集成",
+      "B. Boosting集成",
+      "C. 特征选择",
+      "D. 数据增强"
+    ],
+    "correctAnswer": "A"
+  },
+  {
+    "id": "single_39",
+    "type": "single_choice",
+    "section": "一、选择题",
+    "title": "Transformer模型相比RNN模型的主要优势是？",
+    "options": [
+      "A. 更好的并行计算能力",
+      "B. 更少的参数数量",
+      "C. 更简单的模型结构",
+      "D. 更低的计算复杂度"
+    ],
+    "correctAnswer": "A"
+  },
+  {
+    "id": "single_40",
+    "type": "single_choice",
+    "section": "一、选择题",
+    "title": "卷积神经网络中的池化层(Pooling)主要作用是：",
+    "options": [
+      "A. 增加特征维度",
+      "B. 减少参数数量并保持特征不变性",
+      "C. 提高模型复杂度",
+      "D. 加速反向传播"
+    ],
+    "correctAnswer": "B"
+  },
+  {
+    "id": "single_41",
+    "type": "single_choice",
+    "section": "一、选择题",
+    "title": "GPT系列模型预训练的主要任务是：",
+    "options": [
+      "A. 自回归语言建模",
+      "B. 掩码语言建模",
+      "C. 下一句预测",
+      "D. 文本分类"
+    ],
+    "correctAnswer": "A"
+  },
+  {
+    "id": "single_42",
+    "type": "single_choice",
+    "section": "一、选择题",
+    "title": "梯度消失问题在哪种神经网络中最为严重？",
+    "options": [
+      "A. 卷积神经网络",
+      "B. 循环神经网络",
+      "C. Transformer",
+      "D. 自编码器"
+    ],
+    "correctAnswer": "B"
+  },
+  {
+    "id": "single_43",
+    "type": "single_choice",
+    "section": "一、选择题",
+    "title": "在提示词设计中，思维链（Chain-of-Thought）的主要作用是：",
+    "options": [
+      "A. 减少计算资源",
+      "B. 提高推理透明度",
+      "C. 缩短响应时间",
+      "D. 增加输出长度"
+    ],
+    "correctAnswer": "B"
+  },
+  {
+    "id": "single_44",
+    "type": "single_choice",
+    "section": "一、选择题",
+    "title": "模型量化技术的主要目的是：",
+    "options": [
+      "A. 提高模型精度",
+      "B. 减少模型大小和推理时间",
+      "C. 增加模型复杂度",
+      "D. 改善训练稳定性"
+    ],
+    "correctAnswer": "B"
+  }
+]
