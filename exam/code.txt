@@ -16,7 +16,9 @@ fi
 if [ $MEMORY_USAGE -gt $MEMORY_THRESHOLD ]; then
 echo "警告: 内存使用率 ${MEMORY_USAGE}% 超过阈值 ${MEMORY_THRESHOLD}%" | mail -s "系统监控警告" admin@example.com
 fi
-echo "监控完成: CPU=${CPU_USAGE}%, 内存=${MEMORY_USAGE}%"2. 题目：使用生成器实现斐波那契数列，并演示惰性求值优势。
+echo "监控完成: CPU=${CPU_USAGE}%, 内存=${MEMORY_USAGE}%"
+
+2. 题目：使用生成器实现斐波那契数列，并演示惰性求值优势。
 def fibonacci_generator():
 """生成器实现斐波那契数列"""
 a, b = 0, 1
@@ -41,7 +43,9 @@ print(f"生成器内存占用: {size_small} bytes")
 print(f"列表内存占用: {size_large} bytes")
 print(f"内存节省: {size_large - size_small} bytes")
 if name == "main":
-demo_lazy_evaluation()3.题目：使用Hugging Face Transformers库实现文本摘要任务。
+demo_lazy_evaluation()
+
+3.题目：使用Hugging Face Transformers库实现文本摘要任务。
 from transformers import pipeline, AutoTokenizer, AutoModelForSeq2SeqLM
 import torch
 class TextSummarizer:
@@ -93,7 +97,9 @@ summary = summarizer.summarize(sample_text)
 print("生成的摘要:", summary)
 print("\n" + "="*50)
 #评估摘要质量
-summarizer.evaluate_summary(sample_text, summary)4.题目：编写一个Shell脚本，实现备份指定目录下最近7天内修改过的.py文件到备份目录，并自动删除30天前的备份文件。
+summarizer.evaluate_summary(sample_text, summary)
+
+4.题目：编写一个Shell脚本，实现备份指定目录下最近7天内修改过的.py文件到备份目录，并自动删除30天前的备份文件。
 #!/bin/bash
 #定义源目录和备份目录
 SOURCE_DIR="/home/user/projects"
@@ -104,7 +110,9 @@ mkdir -p $BACKUP_DIR
 find $SOURCE_DIR -name "*.py" -mtime -7 -exec cp {} $BACKUP_DIR ;
 #删除30天前的备份文件
 find $BACKUP_DIR -name "*.py" -mtime +30 -delete
-echo "备份完成！"5.题目：使用Pandas读取CSV文件，清洗数据（处理缺失值、异常值），并进行简单的统计分析。
+echo "备份完成！"
+
+5.题目：使用Pandas读取CSV文件，清洗数据（处理缺失值、异常值），并进行简单的统计分析。
 import pandas as pd
 import numpy as np
 #读取CSV文件
@@ -122,7 +130,9 @@ print(data.info())
 print("\n描述性统计：")
 print(data.describe())
 print("\n相关性矩阵：")
-print(data.corr())6.题目：使用PyTorch或TensorFlow实现一个简单的Transformer模型进行文本分类。
+print(data.corr())
+
+6.题目：使用PyTorch或TensorFlow实现一个简单的Transformer模型进行文本分类。
 参考答案：
 import torch
 import torch.nn as nn
@@ -149,4 +159,3 @@ with torch.no_grad():
 outputs = model(**inputs)
 predictions = torch.argmax(outputs.logits, dim=1)
 print(f"预测结果: {predictions}")
-备注：考试题目分值标准参考，仅供参考：
