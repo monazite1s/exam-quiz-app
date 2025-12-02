@@ -4,12 +4,7 @@
     "type": "single_choice",
     "section": "一、选择题",
     "title": "Linux中哪个命令用于查看系统进程信息？",
-    "options": [
-      "A. Ps",
-      "B. ls",
-      "C. top",
-      "D. A和C"
-    ],
+    "options": ["A. Ps", "B. ls", "C. top", "D. A和C"],
     "correctAnswer": "D"
   },
   {
@@ -17,12 +12,7 @@
     "type": "single_choice",
     "section": "一、选择题",
     "title": "Python中哪个关键字用于定义函数？",
-    "options": [
-      "A. function",
-      "B. def",
-      "C. define",
-      "D. func"
-    ],
+    "options": ["A. function", "B. def", "C. define", "D. func"],
     "correctAnswer": "B"
   },
   {
@@ -30,12 +20,7 @@
     "type": "single_choice",
     "section": "一、选择题",
     "title": "随机森林算法属于哪种集成学习方法？",
-    "options": [
-      "A. Bagging",
-      "B. Boosting",
-      "C. Stacking",
-      "D. Blending"
-    ],
+    "options": ["A. Bagging", "B. Boosting", "C. Stacking", "D. Blending"],
     "correctAnswer": "A"
   },
   {
@@ -69,12 +54,7 @@
     "type": "single_choice",
     "section": "一、选择题",
     "title": "Linux中哪个命令用于显示当前工作目录的完整路径？",
-    "options": [
-      "A. Ls",
-      "B. pwd",
-      "C. cd",
-      "D. whereis"
-    ],
+    "options": ["A. Ls", "B. pwd", "C. cd", "D. whereis"],
     "correctAnswer": "B"
   },
   {
@@ -95,12 +75,7 @@
     "type": "single_choice",
     "section": "一、选择题",
     "title": "在机器学习中，K-近邻算法属于哪种学习类型？",
-    "options": [
-      "A. 监督学习",
-      "B. 无监督学习",
-      "C. 半监督学习",
-      "D. 强化学习"
-    ],
+    "options": ["A. 监督学习", "B. 无监督学习", "C. 半监督学习", "D. 强化学习"],
     "correctAnswer": "A"
   },
   {
@@ -108,12 +83,7 @@
     "type": "single_choice",
     "section": "一、选择题",
     "title": "深度学习中的Dropout技术主要用于：",
-    "options": [
-      "A. 数据增强",
-      "B. 防止过拟合",
-      "C. 加速训练",
-      "D. 特征提取"
-    ],
+    "options": ["A. 数据增强", "B. 防止过拟合", "C. 加速训练", "D. 特征提取"],
     "correctAnswer": "B"
   },
   {
@@ -121,12 +91,7 @@
     "type": "single_choice",
     "section": "一、选择题",
     "title": "Transformer模型的核心机制是：",
-    "options": [
-      "A. 卷积操作",
-      "B. 循环连接",
-      "C. 注意力机制",
-      "D. 池化层"
-    ],
+    "options": ["A. 卷积操作", "B. 循环连接", "C. 注意力机制", "D. 池化层"],
     "correctAnswer": "C"
   },
   {
@@ -134,12 +99,7 @@
     "type": "single_choice",
     "section": "一、选择题",
     "title": "Linux中哪个命令可以实时监控文件内容的变化？",
-    "options": [
-      "A. cat",
-      "B. tail -f",
-      "C. head",
-      "D. more"
-    ],
+    "options": ["A. cat", "B. tail -f", "C. head", "D. more"],
     "correctAnswer": "B"
   },
   {
@@ -147,12 +107,7 @@
     "type": "single_choice",
     "section": "一、选择题",
     "title": "Python中用于创建生成器的关键字是？",
-    "options": [
-      "A. function",
-      "B. generator",
-      "C. yield",
-      "D. return"
-    ],
+    "options": ["A. function", "B. generator", "C. yield", "D. return"],
     "correctAnswer": "C"
   },
   {
@@ -160,12 +115,7 @@
     "type": "single_choice",
     "section": "一、选择题",
     "title": "支持向量机(SVM)中，用于处理非线性可分问题的技术是？",
-    "options": [
-      "A. 正则化",
-      "B. 核技巧",
-      "C. 特征选择",
-      "D. 数据标准化"
-    ],
+    "options": ["A. 正则化", "B. 核技巧", "C. 特征选择", "D. 数据标准化"],
     "correctAnswer": "B"
   },
   {
@@ -225,12 +175,7 @@
     "type": "single_choice",
     "section": "一、选择题",
     "title": "AI Agent的基本框架不包括以下哪个部分？",
-    "options": [
-      "A. 感知",
-      "B. 规划",
-      "C. 自我复制",
-      "D. 执行"
-    ],
+    "options": ["A. 感知", "B. 规划", "C. 自我复制", "D. 执行"],
     "correctAnswer": "C"
   },
   {
@@ -251,12 +196,7 @@
     "type": "single_choice",
     "section": "一、选择题",
     "title": "Linux中用于查看网络连接状态的命令是？",
-    "options": [
-      "A. netstat",
-      "B. ping",
-      "C. ifconfig",
-      "D. curl"
-    ],
+    "options": ["A. netstat", "B. ping", "C. ifconfig", "D. curl"],
     "correctAnswer": "A"
   },
   {
@@ -264,12 +204,7 @@
     "type": "single_choice",
     "section": "一、选择题",
     "title": "在提示词工程中，\"Temperature\"参数主要控制：",
-    "options": [
-      "A. 生成速度",
-      "B. 输出的随机性",
-      "C. 内存使用",
-      "D. 模型大小"
-    ],
+    "options": ["A. 生成速度", "B. 输出的随机性", "C. 内存使用", "D. 模型大小"],
     "correctAnswer": "B"
   },
   {
@@ -316,12 +251,7 @@
     "type": "single_choice",
     "section": "一、选择题",
     "title": "Linux中用于查看文件开头内容的命令是：",
-    "options": [
-      "A. head",
-      "B. tail",
-      "C. cat",
-      "D. less"
-    ],
+    "options": ["A. head", "B. tail", "C. cat", "D. less"],
     "correctAnswer": "A"
   },
   {
@@ -368,12 +298,7 @@
     "type": "single_choice",
     "section": "一、选择题",
     "title": "AI Agent的核心能力不包括：",
-    "options": [
-      "A. 感知环境",
-      "B. 决策行动",
-      "C. 自我复制",
-      "D. 学习改进"
-    ],
+    "options": ["A. 感知环境", "B. 决策行动", "C. 自我复制", "D. 学习改进"],
     "correctAnswer": "C"
   },
   {
@@ -394,12 +319,7 @@
     "type": "single_choice",
     "section": "一、选择题",
     "title": "Linux中用于查找文件的命令是：",
-    "options": [
-      "A. find",
-      "B. search",
-      "C. locate",
-      "D. grep"
-    ],
+    "options": ["A. find", "B. search", "C. locate", "D. grep"],
     "correctAnswer": "A"
   },
   {
@@ -420,12 +340,7 @@
     "type": "single_choice",
     "section": "一、选择题",
     "title": "K-means聚类算法属于哪种学习类型？",
-    "options": [
-      "A. 监督学习",
-      "B. 无监督学习",
-      "C. 半监督学习",
-      "D. 强化学习"
-    ],
+    "options": ["A. 监督学习", "B. 无监督学习", "C. 半监督学习", "D. 强化学习"],
     "correctAnswer": "B"
   },
   {
@@ -1066,7 +981,7 @@
     "type": "code",
     "section": "五、代码题",
     "title": "编写脚本监控系统CPU和内存使用率，超过阈值时发送警告。",
-    "code": "#!/bin/bash\n\nCPU_THRESHOLD=80\nMEMORY_THRESHOLD=90\n\n# 获取 CPU 使用率（使用 idle 字段计算）\nCPU_USAGE=$(top -bn1 | grep \"Cpu(s)\" | awk '{print 100 - $8}' | cut -d'.' -f1)\n\n# 获取内存使用率\nMEMORY_USAGE=$(free | awk '/Mem/ {printf \"%.0f\", $3/$2 * 100}')\n\nif [ $CPU_USAGE -gt $CPU_THRESHOLD ]; then\n  echo \"警告: CPU使用率 ${CPU_USAGE}% 超过阈值 ${CPU_THRESHOLD}%\" | mail -s \"系统监控警告\" admin@example.com\nfi\n\nif [ $MEMORY_USAGE -gt $MEMORY_THRESHOLD ]; then\n  echo \"警告: 内存使用率 ${MEMORY_USAGE}% 超过阈值 ${MEMORY_THRESHOLD}%\" | mail -s \"系统监控警告\" admin@example.com\nfi\n\necho \"监控完成: CPU=${CPU_USAGE}%, 内存=${MEMORY_USAGE}%\"",
+    "code": "#!/bin/bash\n#定义阈值\nCPU_THRESHOLD=80\nMEMORY_THRESHOLD=90\n\n# 获取CPU使用率（去掉百分号）\nCPU_USAGE=$(top -bn1 | grep \"Cpu(s)\" | awk '{print 100 - $8}' | cut -d'.' -f1)\n\n# 获取内存使用率\nMEMORY_USAGE=$(free | awk '/Mem/ {printf \"%.0f\", $3/$2 * 100}')\n\n# 检查CPU使用率\nif [ $CPU_USAGE -gt $CPU_THRESHOLD ]; then\n  echo \"警告: CPU使用率 ${CPU_USAGE}% 超过阈值 ${CPU_THRESHOLD}%\" | mail -s \"系统监控警告\" admin@example.com\nfi\n\n# 检查内存使用率\nif [ $MEMORY_USAGE -gt $MEMORY_THRESHOLD ]; then\n  echo \"警告: 内存使用率 ${MEMORY_USAGE}% 超过阈值 ${MEMORY_THRESHOLD}%\" | mail -s \"系统监控警告\" admin@example.com\nfi\n\necho \"监控完成: CPU=${CPU_USAGE}%, 内存=${MEMORY_USAGE}%\"",
     "language": "bash",
     "note": "请查资料补全代码注释"
   },
@@ -1075,7 +990,7 @@
     "type": "code",
     "section": "五、代码题",
     "title": "使用生成器实现斐波那契数列，并演示惰性求值优势。",
-    "code": "def fibonacci_generator():\n    \"\"\"生成器实现斐波那契数列\"\"\"\n    a, b = 0, 1\n    while True:\n        yield a\n        a, b = b, a + b\n\ndef demo_lazy_evaluation():\n    # 创建生成器\n    fib_gen = fibonacci_generator()\n    # 只获取前20个斐波那契数，不会计算整个无限序列\n    first_20 = [next(fib_gen) for _ in range(20)]\n    print(\"前20个斐波那契数:\", first_20)\n\n    # 内存效率演示：生成器不存储所有值\n    import sys\n    fib_gen2 = fibonacci_generator()\n    size_small = sys.getsizeof(fib_gen2)\n\n    # 正确写法：使用同一个生成器\n    fib_gen3 = fibonacci_generator()\n    fib_list = [next(fib_gen3) for _ in range(1000)]\n    size_large = sys.getsizeof(fib_list)\n\n    print(f\"生成器内存占用: {size_small} bytes\")\n    print(f\"列表内存占用: {size_large} bytes\")\n    print(f\"内存节省: {size_large - size_small} bytes\")\n\nif __name__ == \"__main__\":\n    demo_lazy_evaluation()",
+    "code": "def fibonacci_generator():\n    \"\"\"生成器实现斐波那契数列\"\"\"\n    a, b = 0, 1\n    while True:\n        yield a\n        a, b = b, a + b\n\ndef demo_lazy_evaluation():\n    # 创建生成器\n    fib_gen = fibonacci_generator()\n    # 只获取前20个斐波那契数，不会计算整个无限序列\n    first_20 = [next(fib_gen) for _ in range(20)]\n    print(\"前20个斐波那契数:\", first_20)\n\n    # 内存效率演示：生成器不存储所有值\n    import sys\n    fib_gen2 = fibonacci_generator()\n    size_small = sys.getsizeof(fib_gen2)\n\n    # 对比列表存储所有值的内存占用\n    fib_gen3 = fibonacci_generator()\n    fib_list = [next(fib_gen3) for _ in range(1000)]\n    size_large = sys.getsizeof(fib_list)\n\n    print(f\"生成器内存占用: {size_small} bytes\")\n    print(f\"列表内存占用: {size_large} bytes\")\n    print(f\"内存节省: {size_large - size_small} bytes\")\n\nif __name__ == \"__main__\":\n    demo_lazy_evaluation()",
     "language": "python",
     "note": "请查资料补全代码注释"
   },
@@ -1084,7 +999,7 @@
     "type": "code",
     "section": "五、代码题",
     "title": "使用Hugging Face Transformers库实现文本摘要任务。",
-    "code": "from transformers import pipeline, AutoTokenizer, AutoModelForSeq2SeqLM\nimport torch\n\nclass TextSummarizer:\n    def __init__(self, model_name=\"facebook/bart-large-cnn\"):\n        \"\"\"初始化文本摘要器\"\"\"\n        self.tokenizer = AutoTokenizer.from_pretrained(model_name)\n        self.model = AutoModelForSeq2SeqLM.from_pretrained(model_name)\n\n        # 使用 pipeline 简化操作\n        self.summarizer = pipeline(\n            \"summarization\",\n            model=self.model,\n            tokenizer=self.tokenizer\n        )\n\n    def summarize(self, text, max_length=150, min_length=50):\n        \"\"\"生成文本摘要\"\"\"\n\n        if len(text.split()) < 50:\n            return \"文本过短，无法生成有效摘要\"\n\n        summary = self.summarizer(\n            text,\n            max_length=max_length,\n            min_length=min_length,\n            do_sample=False\n        )\n        return summary[0]['summary_text']\n\n    def evaluate_summary(self, original_text, summary):\n        \"\"\"评估摘要质量\"\"\"\n        \n        # 计算压缩比\n        orig_words = len(original_text.split())\n        summ_words = len(summary.split())\n        compression_ratio = (orig_words - summ_words) / orig_words * 100\n\n        print(f\"原文长度: {orig_words} 词\")\n        print(f\"摘要长度: {summ_words} 词\")\n        print(f\"压缩率: {compression_ratio:.1f}%\")\n\n        # 简单的内容保留评估：前10个词\n        important_words = set(original_text.lower().split()[:10])\n        preserved_words = important_words.intersection(set(summary.lower().split()))\n        preservation_rate = len(preserved_words) / len(important_words) * 100\n\n        print(f\"重要词保留率: {preservation_rate:.1f}%\")\n\n# 使用示例\nif __name__ == \"__main__\":\n    summarizer = TextSummarizer()\n\n    sample_text = \"\"\"\n    人工智能是计算机科学的一个分支，它企图了解智能的实质，并生产出一种新的能以人类智能相似的方式做出反应的智能机器。\n    该领域的研究包括机器人、语言识别、图像识别、自然语言处理和专家系统等。\n    \"\"\"\n\n    summary = summarizer.summarize(sample_text)\n    print(\"生成的摘要:\", summary)\n\n    print(\"\\n\" + \"=\" * 50)\n    summarizer.evaluate_summary(sample_text, summary)",
+    "code": "from transformers import pipeline, AutoTokenizer, AutoModelForSeq2SeqLM\nimport torch\n\nclass TextSummarizer:\n    def __init__(self, model_name=\"facebook/bart-large-cnn\"):\n        \"\"\"初始化文本摘要器\"\"\"\n        self.tokenizer = AutoTokenizer.from_pretrained(model_name)\n        self.model = AutoModelForSeq2SeqLM.from_pretrained(model_name)\n\n        # 使用 pipeline 简化操作\n        self.summarizer = pipeline(\n            \"summarization\",\n            model=self.model,\n            tokenizer=self.tokenizer\n        )\n\n    def summarize(self, text, max_length=150, min_length=50):\n        \"\"\"生成文本摘要\"\"\"\n\n        # 预处理文本\n        if len(text.split()) < 50:\n            return \"文本过短，无法生成有效摘要\"\n\n        # 生成摘要\n        summary = self.summarizer(\n            text,\n            max_length=max_length,\n            min_length=min_length,\n            do_sample=False\n        )\n        return summary[0]['summary_text']\n\n    def evaluate_summary(self, original_text, summary):\n        \"\"\"评估摘要质量\"\"\"\n        \n        # 计算压缩比\n        orig_words = len(original_text.split())\n        summ_words = len(summary.split())\n        compression_ratio = (orig_words - summ_words) / orig_words * 100\n\n        print(f\"原文长度: {orig_words} 词\")\n        print(f\"摘要长度: {summ_words} 词\")\n        print(f\"压缩率: {compression_ratio:.1f}%\")\n\n        # 简单的内容保留评估\n        important_words = set(original_text.lower().split()[:10])\n        preserved_words = important_words.intersection(set(summary.lower().split()))\n        preservation_rate = len(preserved_words) / len(important_words) * 100\n\n        print(f\"重要词保留率: {preservation_rate:.1f}%\")\n\n# 使用示例\nif __name__ == \"__main__\":\n    # 初始化摘要器\n    summarizer = TextSummarizer()\n\n    # 示例文本\n    sample_text = \"\"\"\n    人工智能是计算机科学的一个分支，它企图了解智能的实质，并生产出一种新的能以人类智能相似的方式做出反应的智能机器。\n    该领域的研究包括机器人、语言识别、图像识别、自然语言处理和专家系统等。\n    \"\"\"\n\n    # 生成摘要\n    summary = summarizer.summarize(sample_text)\n    print(\"生成的摘要:\", summary)\n\n    # 评估摘要质量\n    print(\"\\n\" + \"=\" * 50)\n    summarizer.evaluate_summary(sample_text, summary)",
     "language": "python",
     "note": "请查资料补全代码注释"
   },

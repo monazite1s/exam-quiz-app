@@ -1,20 +1,22 @@
 
 1. 题目：编写脚本监控系统CPU和内存使用率，超过阈值时发送警告。
 #!/bin/bash
-
+#定义阈值
 CPU_THRESHOLD=80
 MEMORY_THRESHOLD=90
 
-# 获取 CPU 使用率（使用 idle 字段计算）
+# 获取CPU使用率（去掉百分号）
 CPU_USAGE=$(top -bn1 | grep "Cpu(s)" | awk '{print 100 - $8}' | cut -d'.' -f1)
 
 # 获取内存使用率
 MEMORY_USAGE=$(free | awk '/Mem/ {printf "%.0f", $3/$2 * 100}')
 
+# 检查CPU使用率
 if [ $CPU_USAGE -gt $CPU_THRESHOLD ]; then
   echo "警告: CPU使用率 ${CPU_USAGE}% 超过阈值 ${CPU_THRESHOLD}%" | mail -s "系统监控警告" admin@example.com
 fi
 
+# 检查内存使用率
 if [ $MEMORY_USAGE -gt $MEMORY_THRESHOLD ]; then
   echo "警告: 内存使用率 ${MEMORY_USAGE}% 超过阈值 ${MEMORY_THRESHOLD}%" | mail -s "系统监控警告" admin@example.com
 fi
@@ -41,7 +43,7 @@ def demo_lazy_evaluation():
     fib_gen2 = fibonacci_generator()
     size_small = sys.getsizeof(fib_gen2)
 
-    # 正确写法：使用同一个生成器
+    # 对比列表存储所有值的内存占用
     fib_gen3 = fibonacci_generator()
     fib_list = [next(fib_gen3) for _ in range(1000)]
     size_large = sys.getsizeof(fib_list)
@@ -73,9 +75,11 @@ class TextSummarizer:
     def summarize(self, text, max_length=150, min_length=50):
         """生成文本摘要"""
 
+        # 预处理文本
         if len(text.split()) < 50:
             return "文本过短，无法生成有效摘要"
 
+        # 生成摘要
         summary = self.summarizer(
             text,
             max_length=max_length,
@@ -96,7 +100,7 @@ class TextSummarizer:
         print(f"摘要长度: {summ_words} 词")
         print(f"压缩率: {compression_ratio:.1f}%")
 
-        # 简单的内容保留评估：前10个词
+        # 简单的内容保留评估
         important_words = set(original_text.lower().split()[:10])
         preserved_words = important_words.intersection(set(summary.lower().split()))
         preservation_rate = len(preserved_words) / len(important_words) * 100
@@ -105,16 +109,20 @@ class TextSummarizer:
 
 # 使用示例
 if __name__ == "__main__":
+    # 初始化摘要器
     summarizer = TextSummarizer()
 
+    # 示例文本
     sample_text = """
     人工智能是计算机科学的一个分支，它企图了解智能的实质，并生产出一种新的能以人类智能相似的方式做出反应的智能机器。
     该领域的研究包括机器人、语言识别、图像识别、自然语言处理和专家系统等。
     """
 
+    # 生成摘要
     summary = summarizer.summarize(sample_text)
     print("生成的摘要:", summary)
 
+    # 评估摘要质量
     print("\n" + "=" * 50)
     summarizer.evaluate_summary(sample_text, summary)
 
