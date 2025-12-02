@@ -4,6 +4,8 @@ import React, { useState, useEffect } from "react";
 import { useRouter } from "next/navigation";
 import { Question, QuestionType } from "@/types/question";
 import { getAllQuestions } from "@/data/question-provider";
+import { Prism as SyntaxHighlighter } from "react-syntax-highlighter";
+import { vscDarkPlus } from "react-syntax-highlighter/dist/esm/styles/prism";
 import styles from "./page.module.css";
 
 /**
@@ -221,9 +223,29 @@ function QuestionItem({
               <p>
                 <strong>参考代码：</strong>
               </p>
-              <pre className={styles.codeBlock}>
-                <code>{question.code}</code>
-              </pre>
+              <SyntaxHighlighter
+                language={question.language || "text"}
+                style={vscDarkPlus}
+                customStyle={{
+                  margin: 0,
+                  borderRadius: "8px",
+                  fontSize: "0.875rem",
+                }}
+                showLineNumbers
+              >
+                {question.code}
+              </SyntaxHighlighter>
+              {question.note && (
+                <p
+                  style={{
+                    marginTop: "8px",
+                    fontSize: "0.9rem",
+                    color: "#888",
+                  }}
+                >
+                  📝 {question.note}
+                </p>
+              )}
             </div>
           )}
         </div>

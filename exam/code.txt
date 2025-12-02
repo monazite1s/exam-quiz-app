@@ -1,161 +1,197 @@
 
 1. 题目：编写脚本监控系统CPU和内存使用率，超过阈值时发送警告。
 #!/bin/bash
-#定义阈值
+
 CPU_THRESHOLD=80
 MEMORY_THRESHOLD=90
-#获取CPU使用率（去掉百分号）
-CPU_USAGE=$(top -bn1 | grep "Cpu(s)" | awk '{print $2}' | cut -d'%' -f1 | cut -d'.' -f1)
-#获取内存使用率
-MEMORY_USAGE=$(free | grep Mem | awk '{printf "%.0f", $3/$2 * 100}')
-#检查CPU使用率
+
+# 获取 CPU 使用率（使用 idle 字段计算）
+CPU_USAGE=$(top -bn1 | grep "Cpu(s)" | awk '{print 100 - $8}' | cut -d'.' -f1)
+
+# 获取内存使用率
+MEMORY_USAGE=$(free | awk '/Mem/ {printf "%.0f", $3/$2 * 100}')
+
 if [ $CPU_USAGE -gt $CPU_THRESHOLD ]; then
-echo "警告: CPU使用率 ${CPU_USAGE}% 超过阈值 ${CPU_THRESHOLD}%" | mail -s "系统监控警告" admin@example.com
+  echo "警告: CPU使用率 ${CPU_USAGE}% 超过阈值 ${CPU_THRESHOLD}%" | mail -s "系统监控警告" admin@example.com
 fi
-#检查内存使用率
+
 if [ $MEMORY_USAGE -gt $MEMORY_THRESHOLD ]; then
-echo "警告: 内存使用率 ${MEMORY_USAGE}% 超过阈值 ${MEMORY_THRESHOLD}%" | mail -s "系统监控警告" admin@example.com
+  echo "警告: 内存使用率 ${MEMORY_USAGE}% 超过阈值 ${MEMORY_THRESHOLD}%" | mail -s "系统监控警告" admin@example.com
 fi
+
 echo "监控完成: CPU=${CPU_USAGE}%, 内存=${MEMORY_USAGE}%"
 
 2. 题目：使用生成器实现斐波那契数列，并演示惰性求值优势。
 def fibonacci_generator():
-"""生成器实现斐波那契数列"""
-a, b = 0, 1
-while True:
-yield a
-a, b = b, a + b
-#演示惰性求值优势
+    """生成器实现斐波那契数列"""
+    a, b = 0, 1
+    while True:
+        yield a
+        a, b = b, a + b
+
 def demo_lazy_evaluation():
-# 创建生成器
-fib_gen = fibonacci_generator()
-# 只获取前20个斐波那契数，不会计算整个无限序列
-first_20 = [next(fib_gen) for _ in range(20)]
-print("前20个斐波那契数:", first_20)
-# 内存效率演示：生成器不存储所有值
-import sys
-fib_gen2 = fibonacci_generator()
-size_small = sys.getsizeof(fib_gen2)
-# 对比列表存储所有值的内存占用
-fib_list = [next(fibonacci_generator()) for _ in range(1000)]
-size_large = sys.getsizeof(fib_list)
-print(f"生成器内存占用: {size_small} bytes")
-print(f"列表内存占用: {size_large} bytes")
-print(f"内存节省: {size_large - size_small} bytes")
-if name == "main":
-demo_lazy_evaluation()
+    # 创建生成器
+    fib_gen = fibonacci_generator()
+    # 只获取前20个斐波那契数，不会计算整个无限序列
+    first_20 = [next(fib_gen) for _ in range(20)]
+    print("前20个斐波那契数:", first_20)
+
+    # 内存效率演示：生成器不存储所有值
+    import sys
+    fib_gen2 = fibonacci_generator()
+    size_small = sys.getsizeof(fib_gen2)
+
+    # 正确写法：使用同一个生成器
+    fib_gen3 = fibonacci_generator()
+    fib_list = [next(fib_gen3) for _ in range(1000)]
+    size_large = sys.getsizeof(fib_list)
+
+    print(f"生成器内存占用: {size_small} bytes")
+    print(f"列表内存占用: {size_large} bytes")
+    print(f"内存节省: {size_large - size_small} bytes")
+
+if __name__ == "__main__":
+    demo_lazy_evaluation()
 
 3.题目：使用Hugging Face Transformers库实现文本摘要任务。
 from transformers import pipeline, AutoTokenizer, AutoModelForSeq2SeqLM
 import torch
+
 class TextSummarizer:
-def init(self, model_name="facebook/bart-large-cnn"):
-"""初始化文本摘要器"""
-self.tokenizer = AutoTokenizer.from_pretrained(model_name)
-self.model = AutoModelForSeq2SeqLM.from_pretrained(model_name)
-# 使用pipeline简化操作
-self.summarizer = pipeline("summarization",
-model=model_name,
-tokenizer=model_name)
-def summarize(self, text, max_length=150, min_length=50):
-"""生成文本摘要"""
-# 预处理文本
-if len(text.split()) < 50:
-return "文本过短，无法生成有效摘要"
-# 生成摘要
-summary = self.summarizer(text,
-max_length=max_length,
-min_length=min_length,
-do_sample=False)
-return summary[0]['summary_text']
-def evaluate_summary(self, original_text, summary):
-"""评估摘要质量"""
-# 计算压缩比
-orig_words = len(original_text.split())
-summ_words = len(summary.split())
-compression_ratio = (orig_words - summ_words) / orig_words * 100
-print(f"原文长度: {orig_words} 词")
-print(f"摘要长度: {summ_words} 词")
-print(f"压缩率: {compression_ratio:.1f}%")
-# 简单的内容保留评估
-important_words = set(original_text.lower().split()[:10])  # 取前10个词作为重要词
-preserved_words = important_words.intersection(set(summary.lower().split()))
-preservation_rate = len(preserved_words) / len(important_words) * 100
-print(f"重要词保留率: {preservation_rate:.1f}%")
+    def __init__(self, model_name="facebook/bart-large-cnn"):
+        """初始化文本摘要器"""
+        self.tokenizer = AutoTokenizer.from_pretrained(model_name)
+        self.model = AutoModelForSeq2SeqLM.from_pretrained(model_name)
+
+        # 使用 pipeline 简化操作
+        self.summarizer = pipeline(
+            "summarization",
+            model=self.model,
+            tokenizer=self.tokenizer
+        )
+
+    def summarize(self, text, max_length=150, min_length=50):
+        """生成文本摘要"""
+
+        if len(text.split()) < 50:
+            return "文本过短，无法生成有效摘要"
+
+        summary = self.summarizer(
+            text,
+            max_length=max_length,
+            min_length=min_length,
+            do_sample=False
+        )
+        return summary[0]['summary_text']
+
+    def evaluate_summary(self, original_text, summary):
+        """评估摘要质量"""
+        
+        # 计算压缩比
+        orig_words = len(original_text.split())
+        summ_words = len(summary.split())
+        compression_ratio = (orig_words - summ_words) / orig_words * 100
+
+        print(f"原文长度: {orig_words} 词")
+        print(f"摘要长度: {summ_words} 词")
+        print(f"压缩率: {compression_ratio:.1f}%")
+
+        # 简单的内容保留评估：前10个词
+        important_words = set(original_text.lower().split()[:10])
+        preserved_words = important_words.intersection(set(summary.lower().split()))
+        preservation_rate = len(preserved_words) / len(important_words) * 100
+
+        print(f"重要词保留率: {preservation_rate:.1f}%")
+
 # 使用示例
-if name == "main":
-# 创建摘要器
-summarizer = TextSummarizer()
-# 示例文本
-sample_text = """
-人工智能是计算机科学的一个分支，它企图了解智能的实质，并生产出一种新的能以人类智能相似的方式做出反应的智能机器。
-该领域的研究包括机器人、语言识别、图像识别、自然语言处理和专家系统等。人工智能从诞生以来，理论和技术日益成熟，
-应用领域也不断扩大，可以设想，未来人工智能带来的科技产品，将会是人类智慧的容器。人工智能可以对人的意识、思维的信息过程的模拟。
-人工智能不是人的智能，但能像人那样思考，也可能超过人的智能。
-""" # 生成摘要
-summary = summarizer.summarize(sample_text)
-print("生成的摘要:", summary)
-print("\n" + "="*50)
-#评估摘要质量
-summarizer.evaluate_summary(sample_text, summary)
+if __name__ == "__main__":
+    summarizer = TextSummarizer()
+
+    sample_text = """
+    人工智能是计算机科学的一个分支，它企图了解智能的实质，并生产出一种新的能以人类智能相似的方式做出反应的智能机器。
+    该领域的研究包括机器人、语言识别、图像识别、自然语言处理和专家系统等。
+    """
+
+    summary = summarizer.summarize(sample_text)
+    print("生成的摘要:", summary)
+
+    print("\n" + "=" * 50)
+    summarizer.evaluate_summary(sample_text, summary)
 
 4.题目：编写一个Shell脚本，实现备份指定目录下最近7天内修改过的.py文件到备份目录，并自动删除30天前的备份文件。
 #!/bin/bash
-#定义源目录和备份目录
+
+# 定义源目录和备份目录
 SOURCE_DIR="/home/user/projects"
 BACKUP_DIR="/home/user/backups"
-#创建备份目录（如果不存在）
-mkdir -p $BACKUP_DIR
-#备份最近7天内修改过的.py文件
-find $SOURCE_DIR -name "*.py" -mtime -7 -exec cp {} $BACKUP_DIR ;
-#删除30天前的备份文件
-find $BACKUP_DIR -name "*.py" -mtime +30 -delete
+
+# 创建备份目录（如果不存在）
+mkdir -p "$BACKUP_DIR"
+
+# 备份最近 7 天内修改过的 .py 文件
+find "$SOURCE_DIR" -name "*.py" -mtime -7 -exec cp {} "$BACKUP_DIR" \;
+
+# 删除 30 天前的备份文件
+find "$BACKUP_DIR" -name "*.py" -mtime +30 -delete
+
 echo "备份完成！"
 
 5.题目：使用Pandas读取CSV文件，清洗数据（处理缺失值、异常值），并进行简单的统计分析。
 import pandas as pd
 import numpy as np
-#读取CSV文件
+
+# 读取 CSV 文件
 data = pd.read_csv('data.csv')
-#数据清洗：处理缺失值
-data.fillna(method='ffill', inplace=True)  # 前向填充
-#处理异常值：使用3σ原则
+
+# 数据清洗：缺失值前向填充
+data.fillna(method='ffill', inplace=True)
+
+# 异常值处理：3σ 原则
 for col in data.select_dtypes(include=[np.number]).columns:
-mean = data[col].mean()
-std = data[col].std()
-data = data[(data[col] > mean - 3std) & (data[col] < mean + 3std)]
-#统计分析
+    mean = data[col].mean()
+    std = data[col].std()
+    data = data[(data[col] > mean - 3 * std) & (data[col] < mean + 3 * std)]
+
+# 统计分析
 print("数据基本信息：")
 print(data.info())
+
 print("\n描述性统计：")
 print(data.describe())
+
 print("\n相关性矩阵：")
 print(data.corr())
 
 6.题目：使用PyTorch或TensorFlow实现一个简单的Transformer模型进行文本分类。
 参考答案：
 import torch
-import torch.nn as nn
 from transformers import BertTokenizer, BertForSequenceClassification
-#加载预训练模型和分词器
+
+# 加载预训练模型和分词器
 tokenizer = BertTokenizer.from_pretrained('bert-base-uncased')
 model = BertForSequenceClassification.from_pretrained('bert-base-uncased', num_labels=2)
-#示例数据
+
+# 示例数据
 texts = ["This is a positive review", "This product is bad"]
 labels = [1, 0]
-#数据预处理
+
+# 数据预处理
 inputs = tokenizer(texts, padding=True, truncation=True, return_tensors="pt")
-#模型训练（简化示例）
+
+# 模型训练（简化示例）
 optimizer = torch.optim.AdamW(model.parameters(), lr=1e-5)
+
 for epoch in range(3):
-outputs = model(**inputs, labels=torch.tensor(labels))
-loss = outputs.loss
-loss.backward()
-optimizer.step()
-optimizer.zero_grad()
-print(f"Epoch {epoch+1}, Loss: {loss.item():.4f}")
-#模型预测
+    outputs = model(**inputs, labels=torch.tensor(labels))
+    loss = outputs.loss
+    loss.backward()
+    optimizer.step()
+    optimizer.zero_grad()
+
+    print(f"Epoch {epoch + 1}, Loss: {loss.item():.4f}")
+
+# 模型预测
 with torch.no_grad():
-outputs = model(**inputs)
-predictions = torch.argmax(outputs.logits, dim=1)
-print(f"预测结果: {predictions}")
+    outputs = model(**inputs)
+    predictions = torch.argmax(outputs.logits, dim=1)
+    print(f"预测结果: {predictions}")
